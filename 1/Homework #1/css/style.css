@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&display=swap');
+
+body {
+    background: rgba(17, 118, 242, 0.02);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h3,
+h4,
+h5 {
+    color: #1178F2;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+span {
+    color: #1178F2;
+    font-weight: 700;
+    font-style: italic;
+}
+
+header {
+    background: rgba(17, 118, 242, 0.04);
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1178F2;
+}
+
+ul {
+    float: right;
+}
+
+.logo {
+    float: left;
+    margin: 22.5px;
+}
+
+.logo-img {
+    width: 50px;
+}
+
+.nav {
+    width: 70%;
+    margin: 12.5px;
+    float: right;
+}
+
+main {
+    background: rgba(17, 118, 242, 0.04);
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.article {
+    padding: 0 25px;
+}
+
+.img {
+    border: 5px solid rgba(17, 118, 242, 0.35);
+    float: left;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.location {
+    text-align: center;
+}
