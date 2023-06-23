@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    --clr-white: #fff;
+    --clr-promo-text: #333;
+    --clr-logo-bg: #f1efec;
+    --clr-donate-bg: #9b242d;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.container {
+    width: 102.4rem;
+    margin: 0 auto;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-block {
+    background: var(--clr-white);
+    flex: 1 0 11.4rem;
+}
+
+
+/* promo block */
+
+.promo-block {
+    flex: 1 0 60rem;
+    background: url('../images/image.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-block-content {
+    color: var(--clr-white);
+}
+
+.promo-block-header {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.promo-block-text {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    text-align: center;
+    width: 70rem;
+}
+
+
+/* logo block */
+
+.logo-block {
+    flex: 1 0 31.6rem;
+    display: flex;
+}
+
+.logo-block_logo {
+    flex: 1 0 31.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-logo-bg);
+}
+
+.logo-block_donate {
+    flex: 1 0 31.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-donate-bg);
+}
+
+.logo-block_donate-content {
+    color: var(--clr-white);
+    text-align: left;
+}
+
+.logo-block-donate-content-header {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.logo-block-donate-content-text {
+    font-size: 1.6rem;
+    line-height: 2.2;
+}
+
+
+/* sign block */
+
+.sign-block {
+    flex: 1 0 31.7rem;
+    display: flex;
+}
+
+.sign-block_subscribe {
+    background: #46a651;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.sign-block_subscribe-content {
+    padding-right: 6rem;
+    color: var(--clr-white);
+    text-align: right;
+}
+
+.sign-block_subscribe-content-header {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.sign-block_subscribe-content-text {
+    line-height: 2.2;
+    font-size: 1.6rem;
+    /* font-weight: 400; */
+    width: 47.943rem;
+}
+
+
+/* facebook block */
+
+.facebook-block {
+    background: #3b5997;
+    flex: 1 0 31.6rem;
+}
+
+.footer {
+    background: #373838;
+    flex: 1 0 12.6rem;
+}
