@@ -45,13 +45,6 @@ a {
     list-style-type: none;
 }
 
-.nav-menu_list-item {
-    display: block;
-}
-
-
-/* header block */
-
 .header-block {
     background: var(--clr-white);
     flex: 1 0 11.4rem;
@@ -85,15 +78,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 6.6rem; */
     color: var(--clr-gray-2);
     line-height: 2.2;
     text-transform: uppercase;
     color: var(--clr-gray-4);
 }
-
-
-/* promo block */
 
 .promo-block {
     flex: 1 0 60rem;
@@ -115,14 +104,11 @@ a {
 }
 
 .promo-block-text {
+    width: 70rem;
     font-size: 2.4rem;
     line-height: 3.8rem;
     text-align: center;
-    width: 70rem;
 }
-
-
-/* logo block */
 
 .logo-block {
     flex: 1 0 31.6rem;
@@ -135,6 +121,16 @@ a {
     justify-content: center;
     align-items: center;
     background: var(--clr-gray-1);
+    position: relative;
+}
+
+.logo-block-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .logo-block_donate {
@@ -143,6 +139,7 @@ a {
     justify-content: center;
     align-items: center;
     background: var(--clr-brown-1);
+    position: relative;
 }
 
 .logo-block_donate-content {
@@ -161,8 +158,14 @@ a {
     line-height: 2.2;
 }
 
-
-/* sign block */
+.donate-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .sign-block {
     flex: 1 0 31.7rem;
@@ -207,9 +210,6 @@ a {
     background: var(--clr-green-2);
 }
 
-
-/* facebook block */
-
 .facebook-block {
     flex: 1 0 31.6rem;
     display: flex;
@@ -221,6 +221,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .facebook-block_invitation-content {
@@ -241,12 +242,20 @@ a {
     color: var(--clr-white);
 }
 
+.fb-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .footer-block {
     flex: 1 0 12.6rem;
     background: var(--clr-gray-3);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .footer-nav {
