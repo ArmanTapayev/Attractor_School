@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 1008px;
+  margin: 0 auto;
+}
+.menu {
+  padding: 15px 0;
+}
+.menu_wrapper {
+  height: 62px;
+  background-color: #02918c;
+}
+.menu_link {
+  display: inline-block;
+}
+.content_pic {
+  width: 100%;
+}
+.about_me_block {
+  text-align: center;
+  padding: 40px;
+}
+.item {
+  display: inline-block;
+  width: 25%;
+  color: #7e8287;
+  background-image: url('../img/ic-lamp.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  padding-top: 40px;
+}

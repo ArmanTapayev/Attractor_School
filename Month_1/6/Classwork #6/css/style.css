@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 800px;
+  margin: 30px auto;
+  position: relative;
+}
+.header {
+  padding: 20px;
+  background: purple;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+}
+.title {
+  position: sticky;
+  top: 0;
+}
+.box {
+  height: 100px;
+  padding: 20px;
+  text-align: right;
+}
+.box_1 {
+  background: red;
+  width: 100%;
+  position: relative;
+}
+.box_2 {
+  background: yellow;
+  width: 200px;
+  position: absolute;
+  top: -50px;
+  left: 550px;
+  z-index: -1;
+}
+.box_3 {
+  background: green;
+  width: 500px;
+  position: fixed;
+}
+.box_4 {
+  background: blue;
+  width: 700px;
+}

@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu_wrapper {
+  display: flex;
+  height: 60px;
+  background: aqua;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}

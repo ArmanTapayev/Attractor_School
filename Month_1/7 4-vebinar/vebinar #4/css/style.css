@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.item {
+  width: 30%;
+  display: inline-block;
+  height: 100px;
+  background-color: aqua;
+  vertical-align: middle;
+}
+
+.item:not(.other_item) {
+  background: blue;
+}
+
+.item:nth-child(2):hover {
+  background-color: blueviolet;
+}
+
+.item:hover .text {
+  color: red;
+}
+
+.text::selection {
+  color: yellow;
+  background: burlywood;
+}
+
+.image {
+  width: 500px;
+  height: 200px;
+  background: yellow;
+  object-fit: contain;
+  object-fit: cover;
+  object-fit: fill;
+  object-fit: none;
+  object-position: 10% 10%;
+}
