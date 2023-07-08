@@ -38,12 +38,33 @@ ul {
 .container {
   width: 1207px;
   margin: 0 auto;
-  background: green;
+  backgro /und: green;
 }
 
 /* buttons */
 .btn {
+  display: inline-block;
+  color:var(--clr-white);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'Roboto', sans-serif;
 }
+.btn_green {
+  border-radius: 116px;
+  border: 1px solid rgba(237, 255, 129, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 18px 37px;
+  margin-right: 10px;
+}
+.btn_green:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(237, 255, 129, 0.9);
+  color: var(--clr-green-4);
+}
+
 /* text features */
 .headers_text {
   color: var(--clr-green-5);
@@ -60,15 +81,17 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 35px;
 }
 .logotext {
   display: inline-block;
   font-size: 26px;
   font-weight: 900;
   letter-spacing: 0.52px;
-  background: yellow;
+  /* background: yellow; */
   color: var(--clr-white);
   padding-left: 40px;
+  margin-right: 370px;
   position: relative;
 }
 .logotext::before {
@@ -81,10 +104,20 @@ ul {
   position: absolute;
 }
 .menu {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 56px;
   color: var(--clr-white);
   font-size: 16px;
   font-weight: 400;
+}
+.menu_item:hover{
+  color: var(--clr-green-2);
+}
+
+/* header */
+.header {
+  background: url('../img/backgtound.jpg') center/cover no-repeat;
+  min-height: 932px;
 }
