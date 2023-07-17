@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: #1a1a1a"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand navbar-logo" href="#">Start Bootstrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Other Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid my-carousel p-0">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/carousel/notebook.jpg"
+              class="d-block w-100"
+              alt="MacBook Air on the wooden table"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-title">Working mood</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/carousel/coffee.jpg"
+              class="d-block w-100"
+              alt="A cup of coffee beside a notebook"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-title">Let's have a break</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/carousel/react.jpg"
+              class="d-block w-100"
+              alt="A heartshape cup with hot coffee"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-title">Magic of React</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container cards-wrapper">
+      <h1 class="cards-title">Welcome to Modern Business</h1>
+      <div class="line-divider"></div>
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div
+            class=".col-1 .col-sm-6 .col-lg-3 p-0 card bg-light mb-3 card-shade"
+            style="max-width: 22rem"
+          >
+            <h5 class="card-header card-icon">Bootstrap v3.2.0</h5>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium fuga in numquam excepturi sed dolore id enim nihil
+                temporibus magnam sint obcaecati ea dignissimos tempora debitis
+                culpa, cum est quis?
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-border">Learn More</a>
+            </div>
+          </div>
+
+          <div
+            class=".col-1 .col-sm-6 .col-lg-3 p-0 card bg-light mb-3 card-shade"
+            style="max-width: 22rem"
+          >
+            <h5 class="card-header card-icon price-icon">Free & Open Source</h5>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium fuga in numquam excepturi sed dolore id enim nihil
+                temporibus magnam sint obcaecati ea dignissimos tempora debitis
+                culpa, cum est quis?
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-border">Learn More</a>
+            </div>
+          </div>
+
+          <div
+            class=".col-1 .col-sm-6 .col-lg-3 p-0 card bg-light mb-3 card-shade"
+            style="max-width: 22rem"
+          >
+            <h5 class="card-header card-icon compass-icon">Easy to Use</h5>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium fuga in numquam excepturi sed dolore id enim nihil
+                temporibus magnam sint obcaecati ea dignissimos tempora debitis
+                culpa, cum est quis?
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-border">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container images-wrapper">
+      <h2 class="cards_title">Portfolio Heading</h2>
+      <div class="line-divider"></div>
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <img
+            src="./img/porfolio/macbook.jpg"
+            class="porfolio-image .col-1 .col-sm-6 .col-lg-4 p-0 mb-4"
+            alt="MacBook on the desk"
+          />
+          <img
+            src="./img/porfolio/macbook.jpg"
+            class="porfolio-image .col-1 .col-sm-6 .col-lg-4 p-0 mb-4"
+            alt="MacBook on the desk"
+          />
+          <img
+            src="./img/porfolio/macbook.jpg"
+            class="porfolio-image .col-1 .col-sm-6 .col-lg-4 p-0 mb-4"
+            alt="MacBook on the desk"
+          />
+          <img
+            src="./img/porfolio/macbook.jpg"
+            class="porfolio-image .col-1 .col-sm-6 .col-lg-4 p-0 mb-4"
+            alt="MacBook on the desk"
+          />
+          <img
+            src="./img/porfolio/macbook.jpg"
+            class="porfolio-image .col-1 .col-sm-6 .col-lg-4 p-0 mb-4"
+            alt="MacBook on the desk"
+          />
+          <img
+            src="./img/porfolio/macbook.jpg"
+            class="porfolio-image .col-1 .col-sm-6 .col-lg-4 p-0 mb-4"
+            alt="MacBook on the desk"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container features-wrapper">
+      <h2 class="cards-title">Modern Business Features</h2>
+      <div class="line-divider"></div>
+      <div class="mb-3">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <div class="card-body p-0">
+              <p class="card-text">
+                The Modern Business template by Start Bootstrap includes:
+              </p>
+              <ul class="list-style">
+                <li class="list-item">Bootstrap v3.2.0</li>
+                <li class="list-item">jQuery v1.11.0</li>
+                <li class="list-item">Font Awesome v4.1.0</li>
+                <li class="list-item">
+                  Working PHP contact form with validation
+                </li>
+                <li class="list-item">
+                  Unstyled page elements for easy customization
+                </li>
+                <li class="list-item">17 HTML pages</li>
+              </ul>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                nam? Cupiditate aliquid dolores eius? Exercitationem ea earum
+                sint nesciunt inventore dolore corporis, cum beatae fugit est
+                pariatur illum recusandae perferendis.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./img/features/macbookair.jpg"
+              class="img-fluid img-border"
+              alt="MacBook Air on the wooden table"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="line-divider"></div>
+    </div>
+
+    <div class="container features-wrapper">
+      <div class="card">
+        <div class="container">
+          <div class="row features-content">
+            <div class="features-text">
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                similique maiores aperiam molestiae molestias sit quas, sequi
+                expedita! Laudantium consequatur nobis repellat.
+              </p>
+            </div>
+            <div class="features-button">
+              <button type="button" class="btn btn-outline-dark btn-features">
+                Call to Action
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="line-divider"></div>
+    </div>
+
+    <div class="container pt-4 pb-5">
+      <p class="card-text footer-text">Copyright &copy; Your Website 2014</p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
