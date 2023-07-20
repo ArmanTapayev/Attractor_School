@@ -1,0 +1,14 @@
+.social
+    max-width: 500px
+    margin: 0 auto
+    background: orange
+    text-align: center
+    .ic_icon
+        display: inline-block
+        width: 30px
+        height: 30px
+        background-size: cover
+
+@each $icon in tw,insta,ina,youtube
+     .ic_#{$icon}
+         background: url('../images/#{$icon}.svg')

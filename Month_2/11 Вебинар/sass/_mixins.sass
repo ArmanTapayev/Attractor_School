@@ -1,0 +1,12 @@
+=sm
+    @media screen and (max-width: 600px)
+        @content
+
+=make_cols
+    @for $i from 1 through 12
+        $width: percentage($i/12)
+        &_#{$i}
+            width: $width
+            border: 1px solid black
+            height: 50px
+         

@@ -1,0 +1,29 @@
+.block
+    padding: 180px 0 183px 0 
+    &_header
+        font-size: 12.6px
+        font-weight: 900
+        letter-spacing: 6px
+        text-transform: uppercase
+        line-height: 26px
+        margin-bottom: 12px
+        color: $colors-primary
+    &_text
+        width: 754px
+        font-size: 27px
+        font-weight: 500
+        color: $text-colors-headers
+        margin-bottom: 60px
+        line-height: 1.6
+
+.block_purple_light
+    @extend .block
+    background: $colors-secondary-100
+    p, h2
+        color: $colors-white-1
+
+.block_purple_dark
+    @extend .block
+    background: $colors-secondary-400
+    p, h2
+        color: $colors-white-1

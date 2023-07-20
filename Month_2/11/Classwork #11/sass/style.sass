@@ -1,0 +1,27 @@
+@import reset
+@import variables
+@import base
+@import header
+@import mixins
+
+.item
+    width: 300px
+    margin: 0 auto
+    +circle()
+    img
+        width: 100%
+    &_title
+        padding: 20px
+        +circle(100px, $danger)
+        &:hover
+            color: lighten(black, 30% )
+        &::after
+            content: '1'
+    .other_text
+        width: 100%
+        @include md
+            flex-direction: column
+            display: block
+        @include sm
+            width: 100px
+            padding: 20px

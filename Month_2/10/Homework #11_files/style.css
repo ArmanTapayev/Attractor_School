@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800;900&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers  */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after {
+  content: '';
+  content: none;
+}
+
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'M PLUS 1p', Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1146px;
+  margin: 0 auto;
+}
+
+.block, .block_purple_light, .block_purple_dark {
+  padding: 180px 0 183px 0;
+}
+
+.block_header {
+  font-size: 12.6px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  line-height: 26px;
+  margin-bottom: 12px;
+  color: #F61067;
+}
+
+.block_text {
+  width: 754px;
+  font-size: 27px;
+  font-weight: 500;
+  color: #30233D;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.block_purple_light {
+  background: #5E239D;
+}
+
+.block_purple_light p, .block_purple_light h2 {
+  color: #FCFCFC;
+}
+
+.block_purple_dark {
+  background: #150433;
+}
+
+.block_purple_dark p, .block_purple_dark h2 {
+  color: #FCFCFC;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.cards {
+  position: relative;
+  border: 1px solid rgba(246, 16, 103, 0.5);
+  width: 362px;
+  height: 362px;
+  padding-top: 144px;
+  padding-left: 36px;
+}
+
+.cards_header {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 13px;
+}
+
+.cards_header::before {
+  position: absolute;
+  content: '';
+  background-image: url("../icons/cards/icon_red.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  top: 54px;
+  left: 36px;
+}
+
+.cards_text {
+  width: 290px;
+  font-size: 16.2px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.cards_b {
+  position: relative;
+  border: 1px solid rgba(246, 16, 103, 0.5);
+  width: 362px;
+  height: 362px;
+  padding-top: 144px;
+  padding-left: 36px;
+}
+
+.cards_b_header {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 13px;
+}
+
+.cards_b_header::before {
+  position: absolute;
+  content: '';
+  background-image: url("../icons/cards/icon_black.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 54px;
+  height: 62px;
+  top: 54px;
+  left: 36px;
+}
+
+.cards_b_text {
+  width: 290px;
+  font-size: 16.2px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.content {
+  position: relative;
+  border: 1px solid rgba(246, 16, 103, 0.5);
+  width: 362px;
+  height: 362px;
+  padding-top: 144px;
+  padding-left: 36px;
+}
+
+.content_header {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 13px;
+}
+
+.content_text {
+  width: 290px;
+  font-size: 16.2px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.content_01::before {
+  position: absolute;
+  content: "01";
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  top: 92px;
+  left: 36px;
+}
+
+.content_02::before {
+  position: absolute;
+  content: "02";
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  top: 92px;
+  left: 36px;
+}
+
+.content_03::before {
+  position: absolute;
+  content: "03";
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  top: 92px;
+  left: 36px;
+}

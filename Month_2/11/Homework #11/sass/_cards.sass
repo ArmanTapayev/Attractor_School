@@ -1,0 +1,58 @@
+$font-size: ('01', '02', '03')
+.cards
+    +cards
+    &_header
+        +cards_header 
+    &_header::before
+        +cards_icon('../icons/cards/icon_red.svg', 72, 72)
+    &_text
+        +cards_text
+
+    
+.cards_header_black_icon::before
+        +cards_icon('../icons/cards/icon_black.svg', 54, 62)
+
+
+.content 
+
+@each $icon in '01','02','03'
+    .content_#{$icon}::before
+        position: absolute
+        content: '#{$icon}'
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 72px
+        height: 72px
+        top: 92px
+        left: 36px
+
+
+%icon_red
+    position: absolute
+    content: ''
+    background-image: url('../icons/cards/icon_red.svg')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 54px
+    height: 62px
+    top: 54px
+    left: 36px
+  
+%icon_black
+    position: absolute
+    content: ''
+    background-image: $bg-black-icon
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 54px
+    height: 62px
+    top: 54px
+    left: 36px
+  
+
+
+
+

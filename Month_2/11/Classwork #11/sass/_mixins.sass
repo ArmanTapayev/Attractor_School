@@ -1,0 +1,13 @@
+=circle($size:10px, $color:yellow)
+    width: $size
+    height: $size
+    background-color: $color
+    border-radius: 50%
+
+@mixin md()
+    @media screen and (max-width: 768px)
+        @content
+
+@mixin sm()
+    @media screen and (max-width: 589px)
+        @content
