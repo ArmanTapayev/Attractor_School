@@ -1,9 +1,9 @@
 .cards
     +cards
+    &_card_icon
+        +card_icon
     &_header
         +cards_header 
-    &_header::before
-        @extend %sein
     &_text
         +cards_text
 
@@ -26,13 +26,8 @@
 .cards_header_number_03::before
     +cards_number_03
 
-%sein
-    +cards_icon('../icons/cards/icon_red.svg', 72, 72)
 
-%sein2
-    +cards_icon('../icons/cards/icon_black.svg', 54, 62) 
 
-%sein3
-    +cards_number
+
 
 

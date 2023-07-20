@@ -1,0 +1,102 @@
+.basement
+    display: flex
+    margin-bottom: 64px
+    &_logo
+        width: 166px
+        margin-right: 168px
+        &_header
+            display: inline-block
+            font-size: 24px
+            font-weight: 900
+            letter-spacing: 2px
+            margin-bottom: 17px
+    &_item
+        font-size: 12.6px
+        font-weight: 300
+        letter-spacing: 1px
+        margin-bottom: 12px
+    &_link:hover
+        color: $colors-primary
+        cursor: pointer
+    h3
+        display: inline-block
+        height: 20px
+        border-bottom: 1px solid $colors-primary
+        margin-bottom: 20px
+    
+.basement_logo
+    &_link
+        display: inline-block
+        font-size: 24px
+        font-weight: 900
+        letter-spacing: 2px
+        margin-bottom: 25px
+    &_text
+        font-size: 16.2px
+        font-weight: 400
+        line-height: 1.9
+
+.basement_menu
+    margin-right: 36px   
+
+.basement_services
+    margin-right: 68px 
+
+.basement_contactus
+    margin-right: 141px 
+    &_email
+        font-size: 17px
+        font-weight: 400
+        position: relative
+        padding-left: 23px
+        margin-bottom: 17px
+    &_email::before
+        position: absolute
+        content: ''
+        background: url('../icons/contacts/mail.svg')
+        width: 12px
+        height: 9px
+        top: 2px
+        left: 0px
+    &_phone
+        font-size: 17px
+        font-weight: 400
+        position: relative
+        padding-left: 23px
+    &_phone::before
+        position: absolute
+        content: ''
+        background: url('../icons/contacts/phone.svg')
+        width: 9px
+        height: 14px
+        top: 1px
+        left: 0px
+
+
+.basement_socials
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    text-align: center
+    &_icon 
+        display: inline-block
+        width: 9px
+        height: 9px
+        margin-right: 40px
+    &_icon:hover
+        background-color: $colors-primary 
+    
+
+@each $icon in tw,fb,ig,yt,mt
+     .socials_#{$icon}
+         background: url('../icons/socials/#{$icon}.svg') center/cover no-repeat 
+
+
+.copyright
+    display: flex
+    margin-left: 330px
+    &_content
+        color: $colors-white-1
+        font-size: 11.7px
+        font-weight: 400
+
