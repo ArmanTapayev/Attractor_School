@@ -1,9 +1,18 @@
+.footer
+    +md
+        display: flex
+        justify-content: center
+    
 .basement
     display: flex
+    flex-wrap: wrap
     margin-bottom: 64px
+
     &_logo
         width: 166px
         margin-right: 168px
+        +lg
+            margin-right: 50px
         &_header
             display: inline-block
             font-size: 24px
@@ -31,25 +40,49 @@
         font-weight: 900
         letter-spacing: 2px
         margin-bottom: 25px
+    &_header
+        +sm
+            font-size: 20px 
+        +sl
+            font-size: 16px 
     &_text
         font-size: 16.2px
         font-weight: 400
         line-height: 1.9
+        +sm
+            font-size: 14px 
+            margin-bottom: 20px
+        +sl
+            font-size: 12px 
+            margin-bottom: 20px
 
 .basement_menu
-    margin-right: 36px   
+    margin-right: 36px 
+    +sm
+        margin-bottom: 40px 
+    +sl
+        margin-bottom: 40px  
 
 .basement_services
     margin-right: 68px 
+    +sm
+        margin-bottom: 40px 
+    +sl
+        margin-bottom: 40px 
 
 .basement_contactus
     margin-right: 141px 
+    +sm
+        margin-bottom: 35px 
+    +sl
+        margin-bottom: 35px 
     &_email
         font-size: 17px
         font-weight: 400
         position: relative
         padding-left: 23px
         margin-bottom: 17px
+
     &_email::before
         position: absolute
         content: ''
@@ -72,6 +105,17 @@
         top: 1px
         left: 0px
 
+.basement_contactus_email
+    +sm
+        font-size: 14px 
+    +sl
+        font-size: 10px
+
+.basement_contactus_phone
+    +sm
+        font-size: 14px
+    +sl
+        font-size: 10px 
 
 .basement_socials
     display: flex
@@ -95,6 +139,9 @@
 .copyright
     display: flex
     margin-left: 330px
+    +lg
+        margin: 0 auto
+
     &_content
         color: $colors-white-1
         font-size: 11.7px

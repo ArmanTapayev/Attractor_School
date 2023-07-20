@@ -1,14 +1,20 @@
-=sm
-    @media screen and (max-width: 600px)
+=lg
+    @media screen and (max-width: 1196px)
         @content
 
-=make_cols
-    @for $i from 1 through 12
-        $width: percentage($i/12)
-        &_#{$i}
-            width: $width
-            border: 1px solid black
-            height: 50px
+
+=md
+    @media screen and (max-width: 930px)
+        @content
+
+=sm
+    @media screen and (max-width: 700px)
+        @content
+
+=sl
+    @media screen and (max-width: 400px)
+        @content
+
 
 =cards
     position: relative 

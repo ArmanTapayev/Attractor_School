@@ -1,3 +1,31 @@
+.list
+    +lg
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+.container
+    +lg
+        padding: 160px
+    +md
+        padding: 80px 
+    +sm
+        padding: 100px 
+
+.block_header
+    +md
+        font-size: 10px 
+    +sm
+        font-size: 8px 
+
+.block_text   
+    +md
+        font-size: 24px 
+        width: 600px
+    +sm
+        font-size: 20px 
+        width: 400px
+    
 .cards
     +cards
     &_header
@@ -6,7 +34,9 @@
         @extend %sein
     &_text
         +cards_text
-
+        
+.cards:hover
+        background: $colors-primary
 
 .cards_header_black_icon::before
     @extend %sein2

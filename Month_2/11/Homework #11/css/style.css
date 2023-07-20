@@ -97,6 +97,7 @@ a {
 }
 
 .block_purple_dark {
+  padding: 252px 0 306px;
   background: #30124E;
 }
 
@@ -117,6 +118,63 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 30px;
+}
+
+@media screen and (max-width: 1196px) {
+  .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1196px) {
+  .container {
+    padding: 160px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .block_header {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .block_header {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .block_text {
+    font-size: 24px;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .block_text {
+    font-size: 20px;
+    width: 400px;
+  }
 }
 
 .cards {
@@ -140,6 +198,10 @@ a {
   font-size: 16.2px;
   font-weight: 400;
   line-height: 1.8;
+}
+
+.cards:hover {
+  background: #F61067;
 }
 
 .cards_header_number_01::before {
@@ -208,16 +270,35 @@ a {
   left: 36px;
 }
 
+@media screen and (max-width: 930px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .basement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 64px;
 }
 
 .basement_logo {
   width: 166px;
   margin-right: 168px;
+}
+
+@media screen and (max-width: 1196px) {
+  .basement_logo {
+    margin-right: 50px;
+  }
 }
 
 .basement_logo_header {
@@ -255,22 +336,84 @@ a {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 700px) {
+  .basement_logo_header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .basement_logo_header {
+    font-size: 16px;
+  }
+}
+
 .basement_logo_text {
   font-size: 16.2px;
   font-weight: 400;
   line-height: 1.9;
 }
 
+@media screen and (max-width: 700px) {
+  .basement_logo_text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .basement_logo_text {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+
 .basement_menu {
   margin-right: 36px;
+}
+
+@media screen and (max-width: 700px) {
+  .basement_menu {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .basement_menu {
+    margin-bottom: 40px;
+  }
 }
 
 .basement_services {
   margin-right: 68px;
 }
 
+@media screen and (max-width: 700px) {
+  .basement_services {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .basement_services {
+    margin-bottom: 40px;
+  }
+}
+
 .basement_contactus {
   margin-right: 141px;
+}
+
+@media screen and (max-width: 700px) {
+  .basement_contactus {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .basement_contactus {
+    margin-bottom: 35px;
+  }
 }
 
 .basement_contactus_email {
@@ -306,6 +449,30 @@ a {
   height: 14px;
   top: 1px;
   left: 0px;
+}
+
+@media screen and (max-width: 700px) {
+  .basement_contactus_email {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .basement_contactus_email {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .basement_contactus_phone {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .basement_contactus_phone {
+    font-size: 10px;
+  }
 }
 
 .basement_socials {
@@ -355,6 +522,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-left: 330px;
+}
+
+@media screen and (max-width: 1196px) {
+  .copyright {
+    margin: 0 auto;
+  }
 }
 
 .copyright_content {
