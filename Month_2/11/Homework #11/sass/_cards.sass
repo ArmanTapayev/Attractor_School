@@ -12,38 +12,42 @@
     +sm
         padding: 100px 
 
-.block_header
-    +md
-        font-size: 10px 
-    +sm
-        font-size: 8px 
-
-.block_text   
-    +md
-        font-size: 24px 
-        width: 600px
-    +sm
-        font-size: 20px 
-        width: 400px
     
 .cards
     +cards
     &_header
         +cards_header 
     &_header::before
-        @extend %sein
+        @extend %plug
     &_text
         +cards_text
         
+.cards_header 
+    +sm
+        font-size: 24px 
+    +sl
+        font-size: 20px 
+
+.cards_text 
+    +sm
+        font-size: 14px 
+    +sl
+        font-size: 12px 
+
 .cards:hover
         background: $colors-primary
 
 .cards_header_black_icon::before
-    @extend %sein2
-
+    @extend %plug2
 
 .cards_header_number::before
-    @extend %sein3
+    @extend %plug3
+
+.cards_header_number_02::before
+    @extend %plug4
+
+.cards_header_number_03::before
+    @extend %plug5
 
 @each $icon in '01','02','03'
     .cards_header_number_#{$icon}::before
@@ -56,13 +60,19 @@
 .cards_header_number_03::before
     +cards_number_03
 
-%sein
+%plug
     +cards_icon('../icons/cards/icon_red.svg', 72, 72)
 
-%sein2
+%plug2
     +cards_icon('../icons/cards/icon_black.svg', 54, 62) 
 
-%sein3
+%plug3
     +cards_number
+
+%plug4
+    +cards_number_02    
+
+%plug5
+    +cards_number_03
 
 
