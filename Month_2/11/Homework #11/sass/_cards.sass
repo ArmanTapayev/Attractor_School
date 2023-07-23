@@ -49,13 +49,6 @@
 .cards_header_number_03::before
     @extend %plug5
 
-@each $icon in '01','02','03'
-    .cards_header_number_#{$icon}::before
-        background-image: none
-        position: absolute
-        content: '#{$icon}'
-        top: 92px
-        left: 36px
 
 .cards_header_number_03::before
     +cards_number_03
