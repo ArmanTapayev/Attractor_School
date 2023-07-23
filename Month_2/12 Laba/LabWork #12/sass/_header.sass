@@ -1,0 +1,196 @@
+.header 
+    background: $clr-gray-5
+    position: sticky
+    top: 0
+    left: 0
+    z-index: 5
+
+.navbar    
+    height: 60px
+    display: flex   
+    justify-content: center
+    align-items: center
+    position: relative
+    
+    input
+        display: none
+    
+.logo
+    &_wrapper 
+        margin: 0 auto 0 30px
+        width: 96px
+        height: 29px
+        background: url('../icons/logo_icon/xbox.svg') center/cover no-repeat
+        position: relative
+        @include animation
+
+        @include lg
+            margin: 0 auto 0 60px
+
+        @include sm
+            margin-right: auto
+
+        &:hover
+            background: url('../icons/logo_icon/xbox_light.svg') center/cover 
+
+
+    &_link::before 
+        display: inline-block
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 96px
+        height: 29px
+
+.menu
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 37px
+
+    @include sm
+        display: none
+        background: $clr-gray-6
+        position: absolute
+        top: -10px
+        left: 50%
+        transform: translateX(-50%)
+        flex-direction: column
+        align-items: flex-start 
+        padding: 10px     
+        margin-top: 20px
+        text-align: center
+    
+    &_list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @include sm
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            gap: 5px
+            margin-bottom: 5px       
+
+    &_item
+        margin-right: 40px
+        gap: 45px
+        @include animation
+        @include sm
+            margin-right: 0
+            display: block
+            padding: 5px 0
+        &:last-child
+            margin-right: 
+        &:hover
+            @include sm
+                background: $clr-gray-1
+                color: white
+
+    &_link
+        color: $clr-gray-1
+        @include animation
+        &:hover
+            color: $clr-white
+
+.my_xbox
+    height: 20px
+    display: flex
+    align-items: center
+
+    &_text 
+        display: inline-block
+        color: rgba(255, 255, 255, 0.5)
+        font-size: 16px
+        font-weight: 400
+        margin-right: 12px
+        padding-left: 26px
+        position: relative
+        @include animation
+        &:hover
+            cursor: pointer
+            color: $clr-white
+        &::before
+            position: absolute
+            content: ''
+            background: url(../icons/nav_icons/user.svg) center/cover no-repeat
+            width: 20px
+            height: 20px
+            top: 0
+            left: 0
+
+    &_arrow 
+        display: inline-block
+        width: 15px
+        height: 13px
+        &_item            
+            padding-top: 18px  
+            background: url('../icons/nav_icons/down-arrow.svg') center/contain no-repeat
+            position: relative
+            &:hover
+                .my_xbox_arrow_item_submenu
+                    display: block
+            &_submenu
+                @include animation
+                display: none
+                position: absolute
+                color: $clr-gray-1       
+                top: 1px
+                left: -47px
+                padding: 20px 5px
+                &_item:hover
+                    color: $clr-white  
+                &_item:first-child
+                    margin-bottom: 10px
+                &_item
+                    display: block
+                    background: $clr-gray-6
+
+.burger_wrapper
+    display: none
+    align-items: center
+    width: 25px
+    height: 25px
+    position: fixed
+    top: 20px
+    right: 120px
+    @include sm
+        display: flex
+
+    span
+        @extend %burger_item
+        &::before
+            content: ''
+            @extend %burger_item
+            top: 8px
+        &::after
+            content: ''
+            @extend %burger_item
+            top: -8px
+
+.burger_input:checked ~ .burger_wrapper > span
+    transform: rotate(45deg)
+
+.burger_input:checked ~ .burger_wrapper >span::before,
+.burger_input:checked ~ .burger_wrapper >span::after
+    top: 0
+    transform: rotate(90deg)
+
+.burger_input:checked ~ .menu
+    @include sm
+        display: block
+
+
+%burger_item
+    position: absolute
+    width: 100%
+    height: 3px
+    background:  $clr-white                    
+                     
+
+                
+ 
+
+
+
