@@ -1,14 +1,38 @@
 .promo 
     margin: 0 auto   
     max-height: 641px
-    position: relative
+    
     border-top: 3px solid $clr-gray-3
 
     &_content 
         position: absolute
-        top: 30%
-        right: 20%
+        bottom: 300px
+        right: 100px
         z-index: 2
+
+        @include xl
+            bottom: 250px
+            right: 150px
+
+        @include lg
+            bottom: 200px
+            right: 180px
+
+        @include md
+            bottom: 150px
+            right: 100px
+
+        @include sm
+            bottom: 80px
+            right: 80px
+
+        @include sl
+            bottom: 50px
+            right: 30px
+
+        @include xsl
+            bottom: 10px
+            right: 10px
 
     &_title
         font-size: 36px
@@ -16,12 +40,31 @@
         font-weight: 400
         line-height: 1
 
+        @include sm
+            font-size: 30px
+
+        @include sl
+            font-size: 24px
+
+        @include xsl
+            font-size: 18px
+
         &_subtitle
             display: block
             font-size: 24px
             font-style: normal
             font-weight: 400
             margin-bottom: 35px
+
+            @include sm
+                font-size: 20px
+
+            @include sl
+                font-size: 18px
+
+            @include xsl
+                font-size: 12px
+
 
 .my-carousel
     .carousel-item 

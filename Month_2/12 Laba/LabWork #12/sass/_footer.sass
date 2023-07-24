@@ -1,0 +1,86 @@
+.footer 
+    min-height: 395px
+    border-radius: 4px
+    background: $clr-gray-5
+    margin: 0 auto
+    padding-top: 58px
+
+    &_columns 
+        display: flex
+        flex-wrap: wrap
+        gap: 276px
+        margin-bottom: 50px
+
+        @include lg
+            padding-left: 30px
+
+        @include md
+            justify-content: center
+            gap: 100px
+
+        @include sm
+            gap: 50px
+
+        @include sl    
+            flex-direction: column  
+            align-items: center     
+            padding: 10px
+
+        @include xsl
+            padding: 5px
+        
+        &_title
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            color: $clr-green-2
+            margin-bottom: 33px
+
+    &_menu_item 
+        display: block
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        color: $clr-white
+        margin-bottom: 26px 
+
+    &_basement
+        margin: 0 auto
+        width: 1200px
+        min-height: 60px
+        padding-top: 19px
+        border-top: 2px solid rgba(255, 255, 255, 0.35)
+        display: flex
+        justify-content: space-between
+        margin-bottom: 50px
+
+        @include xl
+            width: 90% 
+
+        @include sl    
+            font-size: 14px    
+
+        @include xsl
+            font-size: 12px
+            
+
+            
+.social_block
+    display: flex
+    justify-content: space-between
+    gap: 20px
+
+    &_link
+        display: inline-block
+        width: 20px
+        height: 20px
+
+    &_link:hover
+        background: $clr-blue-1
+
+
+
+
+

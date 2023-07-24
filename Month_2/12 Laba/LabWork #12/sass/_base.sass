@@ -16,8 +16,18 @@ a
     text-decoration: none
 
 .container
+    position: relative
     max-width: 1079px
     margin: 0 auto
+
+    @include sm
+        max-width: 780px
+
+    @include sl
+        max-width: 500px
+
+    @include xsl
+        max-width: 320px
 
 .hyphen
     display: block
