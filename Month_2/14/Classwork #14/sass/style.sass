@@ -1,0 +1,76 @@
+@import variables
+@import base
+
+$transformations: (translateX: 20px, translateY: 25px, scaleX: 1.4, scaleY: 0.5, rotateX: 90deg, rotateY: 45deg,skewX: 20deg, skewY: 40deg)
+
+.block
+    margin: 50px
+    width: $width
+    height: $height
+    background: #aca7a7
+    text-align: center
+    line-height: $height
+    .box
+        width: $width
+        height: $height
+        background: yellow
+        transition: all 0.5s linear
+    &:hover
+        @each $var, $var2 in $transformations
+            .#{$var}
+                transform: #{$var}(#{$var2})
+                       
+    @each $key, $value in $transformations
+        .#{$key}::after
+            content: "#{$key}(#{$value})"
+
+
+.face
+    width: 200px
+    height: 200px
+    border-radius: 50%
+    position: relative
+    background: #dcbdbd
+    animation: blind 1s linear infinite
+    &::after,&::before
+        content: ""
+        width: 30px
+        height: 40px
+        border-radius: 50%
+        position: absolute
+        top: 40px
+        background: #000
+    &::after
+        right: 45px
+        animation: eye 3s linear infinite
+    &::before
+        left: 45px
+    
+@keyframes eye
+    90%
+        transform: none
+    95%
+        transform: scaleY(0.1)
+@keyframes blind
+    0%
+        opacity: 1
+    50%
+        opacity: 0
+    100%
+        opacity: 1
+        
+.origin_px, .origin_word, .origin_per
+    animation: rotate 6s linear infinite
+
+.origin_px
+    transform-origin: 50px 40px
+.origin_word 
+    transform-origin: top left
+.origin_per
+    transform-origin: 20% 30%
+
+@keyframes rotate  
+    100%
+        transform: rotate(360deg)
+        
+

@@ -1,0 +1,51 @@
+table
+    border: 1px solid black
+    border-spacing: 0
+    border-collapse: collapse
+
+    tr, th
+        height: 41px
+        display: flex
+        align-items: center
+        padding-left: 12px
+        border: 1px solid red
+           
+tbody
+    tr, th
+        height: 41px
+        display: flex
+        align-items: center
+        padding-left: 12px
+        border: 1px solid red    
+
+
+
+
+
+.title_id        
+    width: 70px
+    color: $clr_purple_3
+    font-size: 16px
+    font-weight: 700
+    position: relative
+
+    &::before
+        content: ''
+        background: url('../icons/table/arrow_up.svg')
+        width: 7px
+        height: 5px
+        top: 14px
+        right: 8px
+        position: absolute
+
+    &::after
+        content: ''
+        background: url('../icons/table/arrow_down.svg')
+        width: 7px
+        height: 5px
+        bottom: 15px
+        right: 8px
+        position: absolute
+
+.title_id, .title_lname, .title_fname, .title_email, .title_address, .title_profile
+    width: 200px

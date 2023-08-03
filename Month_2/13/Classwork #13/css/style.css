@@ -1,0 +1,50 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-spacing: 10px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.table th, .table td {
+  border: 1px solid black;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table thead {
+  background: yellow;
+}
+
+.table .col1, .table .col2, .table .col3 {
+  width: 100px;
+}
+
+.table .col4 {
+  width: 50px;
+}

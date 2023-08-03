@@ -1,0 +1,159 @@
+.menu
+    display: flex
+    justify-content: space-between
+    max-width: 1200px
+    transition: all 0.8s
+
+    @include md
+        display: none
+        background: $clr-gray-6
+        position: absolute
+        top: -10px
+        left: 50%
+        transform: translateX(-50%)
+        flex-direction: column
+        align-items: flex-start 
+        padding: 10px     
+        margin-top: 20px
+        text-align: center
+        
+    &_list
+        @include display_flex
+        gap: 56px
+        min-height: 56px
+        max-width: 600px
+        margin-right: 55px
+        @include xl
+            gap: 30px
+            margin-right: 10px
+        @include lg
+            gap: 10px
+            margin-right: 5px
+        @include md
+            gap: 10px
+            margin-right: 5px
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            gap: 5px
+            margin-bottom: 5px   
+
+    &_link
+        transition: all 0.2s
+        width: 104px
+        font-size: 15px
+        background-color: $clr-orange-2
+        background-image: $clr-orange-3
+        background-clip: text
+        color: transparent
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        position: relative
+        transform: all 3s ease
+
+        &::after
+            content: ""
+            border-radius: 25px
+            background: linear-gradient(226deg, #FFC000 50%,#FF8A00 100%)
+            height: 3px
+            width: 0%
+            left: 50%
+            bottom: -12px
+            position: absolute
+            -webkit-transition: width .3s ease-in-out
+            -moz--transition: width .3s ease-in-out
+            transition: width .3s ease-in-out
+            -webkit-transform: translateX(-50%)
+            -moz-transform: translateX(-50%)
+            transform: translateX(-50%)
+            @include md
+                bottom: -2px
+
+        &:hover::after
+            width: 50%
+                  
+    &_link:active, &_link:hover
+        @include text_shadow
+
+    .active
+        font-weight: 700
+        &:hover
+            font-weight: 400
+
+
+.cart
+    padding: 18px
+    width: 20px
+    height: 17px
+    margin-right: 37px
+    position: relative
+    color: white
+    @include md
+        margin-bottom: 27px
+    &::after
+        content: attr(data-count)
+        position: absolute
+        bottom: 19px
+        left: 43px
+        font-size: 5px
+
+    &_count
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            background: url('../icons/nav_icons/sphere.svg') top/cover no-repeat
+            width: 14px
+            height: 14px
+            bottom: 19px
+            left: 21px
+        
+.burger_input
+    display: none
+ 
+.burger_wrapper
+    display: none
+    align-items: center
+    width: 25px
+    height: 25px
+    position: fixed
+    top: 42px
+    right: 40px        
+
+    @include md
+        display: flex
+
+    span
+        @extend %burger_item
+        &::before
+            content: ''
+            @extend %burger_item
+            top: 8px
+        &::after
+            content: ''
+            @extend %burger_item
+            top: -8px
+
+.burger_input:checked ~ .burger_wrapper > span
+    transform: rotate(45deg)
+
+.burger_input:checked ~ .burger_wrapper >span::before,
+.burger_input:checked ~ .burger_wrapper >span::after
+    top: 0
+    transform: rotate(90deg)
+
+.burger_input:checked ~ .menu
+    @include md
+        display: block
+
+
+%burger_item
+    position: absolute
+    width: 100%
+    height: 3px
+    background:  $clr-orange-2  
+
+
+    
+
+

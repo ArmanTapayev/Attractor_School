@@ -1,0 +1,15 @@
+.menu
+    text-transform: uppercase
+    &_item
+        display: block
+        padding: 10px 0 10px 20px
+    &_link
+        position: relative
+        &:hover::after
+            content: ''
+            display: inline-block
+            width: 40px
+            border-bottom: 1px solid #000
+            position: absolute
+            bottom: -5px
+            left: 10px

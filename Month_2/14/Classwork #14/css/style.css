@@ -1,0 +1,235 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.block {
+  margin: 50px;
+  width: 250px;
+  height: 160px;
+  background: #aca7a7;
+  text-align: center;
+  line-height: 160px;
+}
+
+.block .box {
+  width: 250px;
+  height: 160px;
+  background: yellow;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.block:hover .translateX {
+  -webkit-transform: translateX20px;
+          transform: translateX20px;
+}
+
+.block:hover .translateY {
+  -webkit-transform: translateY25px;
+          transform: translateY25px;
+}
+
+.block:hover .scaleX {
+  -webkit-transform: scaleX1.4;
+          transform: scaleX1.4;
+}
+
+.block:hover .scaleY {
+  -webkit-transform: scaleY0.5;
+          transform: scaleY0.5;
+}
+
+.block:hover .rotateX {
+  -webkit-transform: rotateX90deg;
+          transform: rotateX90deg;
+}
+
+.block:hover .rotateY {
+  -webkit-transform: rotateY45deg;
+          transform: rotateY45deg;
+}
+
+.block:hover .skewX {
+  -webkit-transform: skewX20deg;
+          transform: skewX20deg;
+}
+
+.block:hover .skewY {
+  -webkit-transform: skewY40deg;
+          transform: skewY40deg;
+}
+
+.block .translateX::after {
+  content: "translateX(20px)";
+}
+
+.block .translateY::after {
+  content: "translateY(25px)";
+}
+
+.block .scaleX::after {
+  content: "scaleX(1.4)";
+}
+
+.block .scaleY::after {
+  content: "scaleY(0.5)";
+}
+
+.block .rotateX::after {
+  content: "rotateX(90deg)";
+}
+
+.block .rotateY::after {
+  content: "rotateY(45deg)";
+}
+
+.block .skewX::after {
+  content: "skewX(20deg)";
+}
+
+.block .skewY::after {
+  content: "skewY(40deg)";
+}
+
+.face {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  background: #dcbdbd;
+  -webkit-animation: blind 1s linear infinite;
+          animation: blind 1s linear infinite;
+}
+
+.face::after, .face::before {
+  content: "";
+  width: 30px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  background: #000;
+}
+
+.face::after {
+  right: 45px;
+  -webkit-animation: eye 3s linear infinite;
+          animation: eye 3s linear infinite;
+}
+
+.face::before {
+  left: 45px;
+}
+
+@-webkit-keyframes eye {
+  90% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  95% {
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
+  }
+}
+
+@keyframes eye {
+  90% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  95% {
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
+  }
+}
+
+@-webkit-keyframes blind {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blind {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.origin_px, .origin_word, .origin_per {
+  -webkit-animation: rotate 6s linear infinite;
+          animation: rotate 6s linear infinite;
+}
+
+.origin_px {
+  -webkit-transform-origin: 50px 40px;
+          transform-origin: 50px 40px;
+}
+
+.origin_word {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.origin_per {
+  -webkit-transform-origin: 20% 30%;
+          transform-origin: 20% 30%;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,10 @@
+    .big_box
+        width: $width
+        height: $height
+        background: green
+        transition: all 0.5s linear
+        &:hover
+            transform: translate(20px, 25px)
+            transform: scale(0.4)
+            transform: rotate(45deg)
+            transform: skew(20deg, 20deg)

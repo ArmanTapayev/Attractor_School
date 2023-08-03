@@ -1,0 +1,113 @@
+.footer
+    &_upper
+        min-height: 274px
+        background: $clr-gray-6
+        padding-top: 60px 
+        padding-bottom: 50px
+        font-family: 'Proxima Nova Rg'
+        color: $clr-white
+
+    &_logo
+        margin-right: 191px
+
+        &_img
+            position: relative
+            padding-top: 30px
+
+        &_img::after
+            position: absolute
+            content: ''
+            background: url('../icons/logo_icon/logo.svg') center/cover no-repeat 
+            width: 143px
+            height: 34px
+            bottom: 30px
+            left: 0
+
+        &_text
+            line-height: 1.4
+            width: 265px
+            font-size: 14px
+ 
+
+    &_heading
+        font-family: 'Proxima Nova Lt'
+        font-size: 16px
+        margin-bottom: 45px
+
+    &_item
+        font-size: 15px
+        margin-bottom: 12px
+
+    &_quicklinks
+        width: 160px
+        height: 181px
+        margin-right: 84px
+
+    &_contacts
+        width: 240px
+        height: 181px
+        margin-right: 84px
+
+    &_faqs
+        padding-top: 108px
+        width: 160px
+        height: 181px
+
+
+    &_lower  
+        background: $clr-black
+        color: $clr-white
+        font-size: 12px
+
+
+
+.upper_wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+    @include xl
+        padding: 0 5%
+
+.lower_wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    min-height: 38px
+
+    @include xl
+        padding: 0 5%
+
+
+.policy
+    margin-right: 35px
+
+.credit
+    color: $clr-orange-1
+    border-bottom: 1px solid $clr-orange-0
+
+
+.basement_socials
+    display: flex
+    justify-content: flex-start
+    margin: 0 auto
+    text-align: center
+    padding-top: 40px
+    gap: 11px
+
+    @include xl
+        padding-bottom: 10%
+
+    &_icon 
+        display: inline-block
+        width: 21px
+        height: 21px
+      
+    &_icon:hover
+        background-color: $clr-white
+    
+    
+@each $icon in facebook, twitter, youtube, dribble
+     .socials_#{$icon}
+         background: url('../icons/social_icons/#{$icon}.svg') center/cover no-repeat 

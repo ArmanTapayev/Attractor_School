@@ -1,0 +1,38 @@
+@mixin animation
+    transition: 0.5s all
+
+@mixin xl
+    @media screen and (max-width: 1300px)
+        @content
+
+@mixin lg
+    @media screen and (max-width: 1100px)
+        @content
+
+@mixin md
+    @media screen and (max-width: 980px)
+        @content
+
+@mixin sm
+    @media screen and (max-width: 780px)
+        @content
+
+@mixin sl
+    @media screen and (max-width: 510px)
+        @content
+
+@mixin xsl
+    @media screen and (max-width: 320px)
+        @content
+
+
+@mixin display_flex
+    display: flex
+    justify-content: center
+    align-items: center
+    
+@mixin text_shadow
+    text-shadow: 0px 0px 0.2px #FF8A00, 0px 0px 0.2px #FFC000
+
+
+

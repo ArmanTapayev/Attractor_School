@@ -1,0 +1,88 @@
+.promo 
+    margin: 0 auto   
+    max-height: 641px
+    
+    border-top: 3px solid $clr-gray-3
+
+    &_content 
+        position: absolute
+        bottom: 300px
+        right: 100px
+        z-index: 2
+        backface-visibility: hidden
+
+        @include xl
+            bottom: 250px
+            right: 100px
+
+        @include lg
+            bottom: 200px
+            right: 100px
+
+        @include md
+            bottom: 150px
+            right: 100px
+
+        @include sm
+            right: 20%
+            @include transform_promo_content(50%)
+
+        @include sl
+            padding-top: 20px
+            right: 20%
+            @include transform_promo_content(100%)
+
+        @include xsl
+            bottom: 10px
+            right: 10px
+            @include transform_promo_content(0)
+
+    &_title
+        font-size: 36px
+        font-style: normal
+        font-weight: 400
+        line-height: 1
+
+        animation: moveInLeft 2s ease-in
+
+        @include sm
+            font-size: 30px
+
+        @include sl
+            font-size: 22px
+
+        @include xsl
+            font-size: 18px
+
+        &_subtitle
+            display: block
+            font-size: 24px
+            font-style: normal
+            font-weight: 400
+            margin-bottom: 35px
+
+            @include sm
+                font-size: 20px
+
+            @include sl
+                font-size: 16px
+                margin-bottom: 25px
+
+            @include xsl
+                font-size: 12px
+
+
+.my-carousel
+    .carousel-item 
+        display: flex
+        max-height: 641px
+
+        img
+            display: block
+            object-fit: cover
+
+    .carousel-title
+        font-size: 28px
+        color: $clr-white       
+        text-shadow: 1px 1px 4px $clr-black
+

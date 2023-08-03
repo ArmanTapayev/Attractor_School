@@ -1,0 +1,21 @@
+@import fonts
+@import reset
+@import base
+@import header
+@import sidebar
+@import content
+
+.grid_container
+    font-family: ProximaNova
+    display: grid
+    grid-template-areas: "header header" "sidebar content"
+    grid-template-columns: 150px 1fr
+    grid-template-rows: 80px 1fr
+    .header
+        grid-area: header
+    .sidebar
+        grid-area: sidebar
+        background: #b3be88d3
+    .content
+        grid-area: content
+    

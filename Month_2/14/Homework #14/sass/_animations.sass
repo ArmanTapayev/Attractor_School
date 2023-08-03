@@ -1,0 +1,45 @@
+@keyframes moveInLeft
+    0%
+        opacity: 0
+        transform: translateX(-100px)
+    80%
+        transform: translateX(10px)
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+
+@keyframes moveInRight
+    0%
+        opacity: 0
+        transform: translateX(100px)
+    80%
+        transform: translateX(-10px)
+    100%
+        opacity: 1
+        transform: translateX(0)    
+
+@keyframes skew_text
+    0%
+        opacity: 0
+        transform: skew(-45deg)
+    50%
+        transform: skew(45deg) 
+    100%
+        opacity: 1
+        transform: skew(0) 
+
+
+// Миксины помещенны здесь с целью 
+// демострации выполнения ДЗ #14
+@mixin bottom_scale
+    &:hover
+        transform: scale(1.1)
+    
+@mixin transform_promo_content($percentage)
+    transform: translateY($percentage)
+
+@mixin card_rotate($degree)
+    &:hover
+            transform: rotateY($degree)
+    

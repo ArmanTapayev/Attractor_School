@@ -1,0 +1,131 @@
+.table
+    width: 100%
+    max-width: 100%
+    text-align: left
+    border-spacing: 10px
+    border-spacing: 0
+    border-collapse: collapse
+    table-layout: fixed
+    word-wrap: break-word
+    font-weight: 400
+
+    +lg
+        table-layout: auto
+    
+    thead
+        tr
+            font-weight: 600
+            border-bottom: 2px solid $clr_blue_6
+            color: $clr_purple_4
+            
+        +md
+            display: none
+
+    tbody
+        tr
+            border-bottom: 1px solid $clr_grey_2
+            color: $clr_grey_4
+            
+
+    th, td     
+        height: 41px
+        font-size: 16px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        padding-left: 12px
+        vertical-align: middle
+        
+    tr
+        +md
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            margin-bottom: 30px
+
+        &:hover
+            background: $clr_white
+
+    td
+        span
+            display: none
+            font-weight: 600
+            border-bottom: 2px solid $clr_blue_6
+            color: $clr_purple_4
+            padding: 5px 10px          
+            position: absolute
+            top: 0
+            left: 0 
+            +md
+                display: block
+
+        +md
+            margin: 0 -1px -1px 0
+            padding-top: 35px
+            position: relative
+            width: 50% 
+            height: 80px
+
+
+        +sm
+            width: 100%
+
+
+    .col_id
+        width: 70px
+        color: $clr_purple_2
+        font-size: 16px
+        font-weight: 700
+        position: relative
+
+        &::before
+            content: ''
+            background: url('../icons/table/arrow_up.svg')
+            width: 7px
+            height: 5px
+            top: 14px
+            right: 8px
+            position: absolute
+
+        &:hover::before
+            background: url('../icons/table/arrow_up_hover.svg') 
+
+        &::after
+            content: ''
+            background: url('../icons/table/arrow_down.svg')
+            width: 7px
+            height: 5px
+            bottom: 15px
+            right: 8px
+            position: absolute
+
+        &:hover::after
+            background: url('../icons/table/arrow_down_hover.svg')
+
+    .col_lname,.col_fname
+        width: 170px    
+    .col_email
+        width: 210px
+    .col_address
+        width: 380px
+    .col_profile
+        width: 100px
+
+    &_header
+        height: 56px
+        font-size: 16px
+        line-height: 24px
+        text-transform: uppercase
+        color: $clr_white
+        background: $clr_blue_4
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        padding-top: 16px
+        padding-left: 24px
+
+
+    &_block
+        background: $clr_grey_1
+        padding: 24px 24px 83px 24px
+        border-bottom-left-radius: 8px
+        border-bottom-right-radius: 8px
