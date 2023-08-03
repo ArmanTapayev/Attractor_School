@@ -1,4 +1,63 @@
 .promo
     height: 489px
-    width: 1500px
+    width: 100%
     background: url('../img/promo_bg.jpg') center/cover no-repeat
+    color: $clr-white
+
+    &_content
+        position: absolute
+        max-width: 534px
+        top: 109px
+        left: 156px
+        @include sm
+            max-width: 334px
+            left: 76px
+        @include sl
+            max-width: 234px
+            left: 36px
+        
+
+    &_heading
+        display: inline-block       
+        font-size: 44px
+        font-family: 'Proxima Nova Bl'
+        line-height: 1.5
+        margin-bottom: 25px
+        @include lg
+            font-size: 36px
+        @include sm
+            font-size: 30px
+        @include sl
+            font-size: 20px
+
+    &_text
+        font-size: 18px
+        font-family: 'Proxima Nova Rg'
+        line-height: 1.7
+        @include lg
+            font-size: 16px
+        @include sm
+            font-size: 14px
+        @include sl
+            font-size: 12px
+
+    &_subtext
+        font-family: 'Proxima Nova Bl'
+
+        &_link:hover
+            color: $clr-black
+
+    &_icons
+        position: absolute
+        background: url('../icons/promo/promo_icons.svg') center/cover no-repeat
+        width: 475px
+        height: 300px
+        right: 0
+        @include xl
+            width: 375px
+            height: 200px
+        @include lg
+            width: 275px
+            height: 100px
+
+

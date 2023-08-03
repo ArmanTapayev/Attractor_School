@@ -128,6 +128,7 @@ a {
 .container_nav {
   max-width: 1500px;
   margin: 0 auto;
+  position: relative;
 }
 
 .hyphen {
@@ -161,6 +162,12 @@ a {
   left: 91px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+@media screen and (max-width: 510px) {
+  .logo_link::after {
+    left: 21px;
+  }
 }
 
 .menu {
@@ -398,8 +405,110 @@ a {
 
 .promo {
   height: 489px;
-  width: 1500px;
+  width: 100%;
   background: url("../img/promo_bg.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+.promo_content {
+  position: absolute;
+  max-width: 534px;
+  top: 109px;
+  left: 156px;
+}
+
+@media screen and (max-width: 780px) {
+  .promo_content {
+    max-width: 334px;
+    left: 76px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .promo_content {
+    max-width: 234px;
+    left: 36px;
+  }
+}
+
+.promo_heading {
+  display: inline-block;
+  font-size: 44px;
+  font-family: 'Proxima Nova Bl';
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+  .promo_heading {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .promo_heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .promo_heading {
+    font-size: 20px;
+  }
+}
+
+.promo_text {
+  font-size: 18px;
+  font-family: 'Proxima Nova Rg';
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 1100px) {
+  .promo_text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .promo_text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .promo_text {
+    font-size: 12px;
+  }
+}
+
+.promo_subtext {
+  font-family: 'Proxima Nova Bl';
+}
+
+.promo_subtext_link:hover {
+  color: #000;
+}
+
+.promo_icons {
+  position: absolute;
+  background: url("../icons/promo/promo_icons.svg") center/cover no-repeat;
+  width: 475px;
+  height: 300px;
+  right: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .promo_icons {
+    width: 375px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .promo_icons {
+    width: 275px;
+    height: 100px;
+  }
 }
 
 .btn {
@@ -503,6 +612,12 @@ a {
   margin-right: 84px;
 }
 
+@media screen and (max-width: 780px) {
+  .footer_quicklinks {
+    margin-bottom: 50px;
+  }
+}
+
 .footer_contacts {
   width: 240px;
   height: 181px;
@@ -513,6 +628,12 @@ a {
   padding-top: 108px;
   width: 160px;
   height: 181px;
+}
+
+@media screen and (max-width: 780px) {
+  .footer_faqs {
+    padding-top: 50px;
+  }
 }
 
 .footer_lower {
