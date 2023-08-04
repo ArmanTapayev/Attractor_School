@@ -1,0 +1,48 @@
+.cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: center
+    gap: 15px 9px
+    @include sm
+        justify-content: center
+    
+.card
+    width: 303px
+    height: 279px
+    border: 1px solid red
+    border-radius: 10px
+    background: $clr-orange-4
+    color: $clr-white
+    overflow: hidden
+    position: relative
+
+    &_footer
+        height: 73px
+        display: flex
+        align-items: center
+        
+    &_text
+        margin-left: 30px
+        width: 150px
+        line-height: 1.5
+
+    &_over
+        position: absolute
+        top: 0
+        right: 0
+        hight: 33px
+        text-align: center
+        background: $clr-orange-4
+        padding: 7px 7px 7px 5px
+        border-bottom-left-radius: 10px
+
+        &_text
+            font-size: 14px
+            font-weight: bold
+
+            &_free
+                width: 70px
+
+            &_premium
+                width: 88px

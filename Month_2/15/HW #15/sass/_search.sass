@@ -1,0 +1,31 @@
+.search
+    height: 78px
+
+.input_wrapper
+    height: 78px
+    position: relative
+    padding: 15px 40px 20px 36px
+    border-radius: 10px
+    background: $clr-orange-4
+    .loupe
+        &::after
+            content: ''
+            position: absolute
+            background: url('../icons/search/search.svg') center/cover no-repeat
+            width: 18px
+            height: 18px
+            top: 22px 
+            left: 30px         
+
+    input
+        width: 100%
+        padding: 10px 0 5px 20px
+        background: transparent
+        border: none
+        outline: none
+        color: #fff
+        font-size: 14px
+        font-family: 'Proxima Nova Rg'
+        border-bottom: 2px solid $clr-white
+        &::placeholder
+            color: white

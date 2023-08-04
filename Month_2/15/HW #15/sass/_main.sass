@@ -1,0 +1,108 @@
+.main
+    padding-top: 90px
+
+    @include xl
+        padding: 90px 5px
+
+.grid_container
+    display: grid
+    grid-template-columns: repeat(3, 309px) 1fr
+    grid-template-rows: 80px 137px repeat(5, 1fr) 268px
+    grid-template-areas: "search search search search" "info info info sidebar" "cards cards cards sidebar" "cards cards cards sidebar" "cards cards cards sidebar" "cards cards cards sidebar" "cards cards cards sidebar" "pagination pagination pagination pagination" 
+
+    .search
+        grid-area: search
+
+    .info
+        grid-area: info
+
+    .cards
+        grid-area: cards
+
+    .sidebar
+        grid-area: sidebar
+
+    .pagination
+        grid-area: pagination
+
+    @include lg
+        grid-template-columns: repeat(3, 309px) 
+        grid-template-rows: 80px 80px repeat(5, 1fr) 100px 268px
+        grid-template-areas: "search search search" "info info info" "cards cards cards" "cards cards cards" "cards cards cards" "cards cards cards" "cards cards cards" "pagination pagination pagination" "sidebar sidebar sidebar"
+
+        .search
+            grid-area: search
+
+        .info
+            grid-area: info
+
+        .cards
+            grid-area: cards
+
+        .sidebar
+            grid-area: sidebar
+
+        .pagination
+            grid-area: pagination
+
+    @include md
+        grid-template-columns: repeat(2, 309px) 
+        grid-template-rows: 80px 80px repeat(8, 1fr) 100px 268px
+        grid-template-areas: "search search" "info info" "cards cards" "cards cards" "cards cards" "cards cards" "cards cards" "cards cards" "cards cards" "cards cards" "pagination pagination" "sidebar sidebar"
+
+        .search
+            grid-area: search
+
+        .info
+            grid-area: info
+
+        .cards
+            grid-area: cards
+
+        .sidebar
+            grid-area: sidebar
+
+        .pagination
+            grid-area: pagination
+
+    @include sm
+        grid-template-columns: repeat(1, 1fr) 
+        grid-template-rows: 80px 100px repeat(15, 1fr) 180px 268px
+        grid-template-areas: "search" "info" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "pagination" "sidebar"
+
+        .search
+            grid-area: search
+
+        .info
+            grid-area: info
+
+        .cards
+            grid-area: cards
+
+        .sidebar
+            grid-area: sidebar
+
+        .pagination
+            grid-area: pagination
+
+    @include sl
+        grid-template-columns: repeat(1, 1fr) 
+        grid-template-rows: 80px 100px repeat(15, 1fr) 180px 468px
+        grid-template-areas: "search" "info" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "cards" "pagination" "sidebar"
+
+        .search
+            grid-area: search
+
+        .info
+            grid-area: info
+
+        .cards
+            grid-area: cards
+
+        .sidebar
+            grid-area: sidebar
+
+        .pagination
+            grid-area: pagination
+
+

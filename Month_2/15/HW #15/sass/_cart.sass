@@ -1,0 +1,30 @@
+.cart
+    width: 20px
+    height: 17px
+    margin-right: 37px
+    position: relative
+    color: $clr-white
+
+    @include md
+        margin-bottom: 27px
+        
+    &::after
+        content: attr(data-count)
+        position: absolute
+        bottom: 19px
+        left: 24px
+        font-size: 5px
+
+    &_count
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            background: url('../icons/nav_icons/sphere.svg') center/cover no-repeat
+            width: 15px
+            height: 15px
+            bottom: 14px
+            left: 19px
+            @include md
+                bottom: 14px
+                left: 9px

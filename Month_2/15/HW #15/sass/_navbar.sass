@@ -1,0 +1,30 @@
+.header
+    background: yellow
+    // фиксируем header
+    position: sticky
+    top: 0
+    left: 0
+    z-index: 10
+        
+.navbar
+    background: #eee
+
+    height: 114px
+    width: 100%
+    
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+    @include md
+        height: 60px
+
+
+.logo
+    &_wrapper
+        width: 160px
+        margin-left: 91px
+        // margin-right: 238px
+        background: #000
+        @include md
+            margin-left: 20px

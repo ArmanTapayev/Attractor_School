@@ -1,20 +1,36 @@
 .navbar
     height: 114px
+    background: $clr-white
     display: flex
     justify-content: space-between
     align-items: center
+    position: sticky
+    top: 0
+    left: 0
+    z-index: 10
+    @include md
+        height: 60px
 
-.logo_link
-    position: relative
-
-.logo_link::after
-    position: absolute
-    content: ''
-    background: url('../icons/logo_icon/logo.svg') center/cover no-repeat 
+.logo_wrapper
+    width: 160px
+    background: #000
+.logo_img
+    display: inline-block
     width: 160px
     height: 39px
-    top: 50%
-    left: 91px
-    transform: translate(0, -50%)
-    @include sl
-        left: 21px
+.logo_link
+    width: 160px
+    height: 39px
+    // position: relative
+
+// .logo_link::after
+//     position: absolute
+//     content: ''
+//     background: url('../icons/logo_icon/logo.svg') center/cover no-repeat 
+//     width: 160px
+//     height: 39px
+//     top: 15px
+//     left: -150px
+//     transform: translate(0, -50%)
+//     @include sl
+//         left: 21px
