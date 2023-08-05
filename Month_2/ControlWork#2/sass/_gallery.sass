@@ -1,0 +1,14 @@
+@each $img in ideas_1, ideas_2, ideas_3, ideas_4, ideas_5, ideas_6, ideas_7, ideas_8
+    .gallery_#{$img}
+        background: url('../img/ideas_block/#{$img}.jpg') center/cover no-repeat
+        width: 292px
+        height: 406px
+
+
+.gallery
+    margin-bottom:  128px   
+    
+    &_wrapper
+        display: flex
+        flex-wrap: wrap
+        gap: 24px
