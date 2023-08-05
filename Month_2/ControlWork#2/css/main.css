@@ -65,8 +65,9 @@ img {
 }
 
 .container {
-  max-width: 1238px;
+  max-width: 1240px;
   margin: 0 auto;
+  background: #eee;
 }
 
 @media screen and (max-width: 1300px) {
@@ -103,4 +104,52 @@ img {
   .container {
     max-width: 320px;
   }
+}
+
+.promo {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(2, 55, 135, 0.9)), color-stop(99.97%, rgba(81, 38, 174, 0.47)), color-stop(99.98%, rgba(38, 92, 174, 0.01)), color-stop(99.99%, rgba(195, 195, 196, 0.01)), to(#76A6EF)), url("../img/promo/promo_bg.jpg") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(2, 55, 135, 0.9) 0, rgba(81, 38, 174, 0.47) 99.97%, rgba(38, 92, 174, 0.01) 99.98%, rgba(195, 195, 196, 0.01) 99.99%, #76A6EF 100%), url("../img/promo/promo_bg.jpg") center/cover no-repeat;
+  height: 865px;
+}
+
+.logo_wrapper {
+  width: 160px;
+  height: 24px;
+  margin-right: 385px;
+}
+
+.navbar {
+  height: 124px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 42px;
 }
