@@ -1,0 +1,56 @@
+.why_block
+
+    &_wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &_title
+        font-family: 'Nunito', sans-serif
+        font-weight: 600
+        font-size: 36px
+        color: $clr_gray_5
+        margin-bottom: 78px
+
+    &_subtitle
+        font-weight: 400
+        font-size: 29px
+        color: $clr_gray_4
+        margin-bottom: 23px
+
+    &_item
+        margin-left: 119px
+        margin-bottom: 57px
+        position: relative
+
+    &_icon
+        position: absolute
+        background: url('../icons/why_block/pricing_1.svg') center/cover no-repeat
+        width: 95px
+        height: 92px
+        top: -19px
+        left: -118px
+
+        &_experts
+            background: url('../icons/why_block/experts_2.svg') center/cover no-repeat
+        
+        &_equipment
+              background: url('../icons/why_block/equipment_3.svg') center/cover no-repeat
+
+    &_image
+        &_wrapper
+            position: relative
+            z-index: 2
+        
+            &::after
+                display: block
+                content: ''
+                background: $clr_orange_1
+                width: 477px
+                height: 431px
+                position: absolute
+                top: 60px
+                left: -74px
+                z-index: -1
+            
+            
