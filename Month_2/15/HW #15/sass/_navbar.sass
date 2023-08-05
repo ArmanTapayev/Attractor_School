@@ -1,17 +1,15 @@
 .header
-    background: yellow
-    // фиксируем header
     position: sticky
     top: 0
     left: 0
     z-index: 10
+    box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.20)
+    background: $clr-white
         
 .navbar
-    background: #eee
-
     height: 114px
     width: 100%
-    
+
     display: flex
     justify-content: space-between
     align-items: center
@@ -24,7 +22,6 @@
     &_wrapper
         width: 160px
         margin-left: 91px
-        // margin-right: 238px
-        background: #000
+
         @include md
             margin-left: 20px

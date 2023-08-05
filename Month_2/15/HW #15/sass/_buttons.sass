@@ -12,16 +12,23 @@
             margin-right: 8px
         
     &_orange
-        display: inline-block
-        
+        display: inline-block    
         background: $clr-orange-4
-        box-shadow: 0px 12px 35px 0px $clr-orange-4
+        box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.20)
         color: $clr-white
         font-size: 14px
         text-align: center
         width: 160px
         height: 56px
         padding: 20px 28px
+
+        &:hover
+            box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.40)
+
+        &:active
+            transform: scale(0.9)
+            box-shadow: 0px 12px 15px 0px rgba(160, 121, 0, 0.60)
+
         @include md
             font-size: 12px
             width: 130px
@@ -43,17 +50,23 @@
         font-size: 11px
         border: 1px solid $clr-gray-3
 
+        @include btn_transform
+
     &_pag
         width: 60px
         height: 60px
         padding: 20px
         font-size: 14px
 
+        @include btn_transform
+
     &_next
         width: 100px
         height: 60px
         padding: 20px 35px
         border-radius: 100px
+
+        @include btn_transform
 
 
 

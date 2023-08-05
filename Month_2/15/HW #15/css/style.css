@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800;900&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -37,6 +38,30 @@ q::before, q::after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bl';
+  src: url("../fonts/ProximaNova-Black.eot");
+  src: local("Proxima Nova Black"), local("ProximaNova-Black"), url("../fonts/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Black.woff2") format("woff2"), url("../fonts/ProximaNova-Black.woff") format("woff"), url("../fonts/ProximaNova-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
@@ -157,14 +182,26 @@ img {
 .btn_orange {
   display: inline-block;
   background: linear-gradient(226deg, #FFC000 0, #FF8A00 100%);
-  -webkit-box-shadow: 0px 12px 35px 0px linear-gradient(226deg, #FFC000 0, #FF8A00 100%);
-          box-shadow: 0px 12px 35px 0px linear-gradient(226deg, #FFC000 0, #FF8A00 100%);
+  -webkit-box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.2);
+          box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.2);
   color: #fff;
   font-size: 14px;
   text-align: center;
   width: 160px;
   height: 56px;
   padding: 20px 28px;
+}
+
+.btn_orange:hover {
+  -webkit-box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.4);
+          box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.4);
+}
+
+.btn_orange:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 0px 12px 15px 0px rgba(160, 121, 0, 0.6);
+          box-shadow: 0px 12px 15px 0px rgba(160, 121, 0, 0.6);
 }
 
 @media screen and (max-width: 980px) {
@@ -193,11 +230,37 @@ img {
   border: 1px solid #5C5C5C;
 }
 
+.btn_courses:hover {
+  background: linear-gradient(226deg, #FFC000 0, #FF8A00 100%);
+  border: none;
+  color: #fff;
+}
+
+.btn_courses:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 0px 12px 15px 0px rgba(160, 121, 0, 0.6);
+          box-shadow: 0px 12px 15px 0px rgba(160, 121, 0, 0.6);
+}
+
 .btn_pag {
   width: 60px;
   height: 60px;
   padding: 20px;
   font-size: 14px;
+}
+
+.btn_pag:hover {
+  background: linear-gradient(226deg, #FFC000 0, #FF8A00 100%);
+  border: none;
+  color: #fff;
+}
+
+.btn_pag:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 0px 12px 15px 0px rgba(160, 121, 0, 0.6);
+          box-shadow: 0px 12px 15px 0px rgba(160, 121, 0, 0.6);
 }
 
 .btn_next {
@@ -207,17 +270,31 @@ img {
   border-radius: 100px;
 }
 
+.btn_next:hover {
+  background: linear-gradient(226deg, #FFC000 0, #FF8A00 100%);
+  border: none;
+  color: #fff;
+}
+
+.btn_next:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 0px 12px 15px 0px rgba(160, 121, 0, 0.6);
+          box-shadow: 0px 12px 15px 0px rgba(160, 121, 0, 0.6);
+}
+
 .header {
-  background: yellow;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 10;
+  -webkit-box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.2);
+          box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.2);
+  background: #fff;
 }
 
 .navbar {
-  background: #eee;
   height: 114px;
   width: 100%;
   display: -webkit-box;
@@ -240,7 +317,6 @@ img {
 .logo_wrapper {
   width: 160px;
   margin-left: 91px;
-  background: #000;
 }
 
 @media screen and (max-width: 980px) {
@@ -259,7 +335,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: green;
   max-width: 1100px;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
@@ -386,10 +461,6 @@ img {
   font-weight: 700;
 }
 
-.menu .active:hover {
-  font-weight: 400;
-}
-
 .cart {
   width: 20px;
   height: 17px;
@@ -434,7 +505,7 @@ img {
 }
 
 .promo {
-  height: 489px;
+  height: 498px;
   width: 100%;
   background: url("../img/promo_bg.jpg") center/cover no-repeat;
   color: #fff;
@@ -516,7 +587,8 @@ img {
 }
 
 .promo_subtext_link:hover {
-  color: #000;
+  text-shadow: 0px 3px 5px rgba(160, 121, 0, 0.9);
+  color: #E0E0E0;
 }
 
 .promo_icons {
@@ -753,6 +825,9 @@ img {
 
 .search {
   height: 78px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.2);
+          box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.2);
 }
 
 .input_wrapper {
@@ -957,9 +1032,14 @@ img {
 }
 
 .all_courses_item {
+  font-family: 'Proxima Nova Rg';
   color: #5C5C5C;
   font-size: 14px;
   margin-bottom: 35px;
+}
+
+.all_courses_item:hover {
+  color: #FF8A00;
 }
 
 @media screen and (max-width: 1300px) {
@@ -1031,8 +1111,9 @@ img {
 .card {
   width: 303px;
   height: 279px;
-  border: 1px solid red;
   border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Proxima Nova Bl';
   background: linear-gradient(226deg, #FFC000 0, #FF8A00 100%);
   color: #fff;
   overflow: hidden;
@@ -1051,7 +1132,7 @@ img {
 
 .card_text {
   margin-left: 30px;
-  width: 150px;
+  width: 200px;
   line-height: 1.5;
 }
 
@@ -1121,22 +1202,12 @@ img {
   margin-right: 191px;
 }
 
-.footer_logo_img {
-  position: relative;
-  padding-top: 30px;
-}
-
-.footer_logo_img::after {
-  position: absolute;
-  content: '';
-  background: url("../icons/logo_icon/logo.svg") center/cover no-repeat;
-  width: 143px;
-  height: 34px;
-  bottom: 30px;
-  left: 0;
+.footer_logo_wrapper {
+  width: 142px;
 }
 
 .footer_logo_text {
+  margin-top: 35px;
   line-height: 1.4;
   width: 265px;
   font-size: 14px;
@@ -1151,6 +1222,10 @@ img {
 .footer_item {
   font-size: 15px;
   margin-bottom: 12px;
+}
+
+.footer_item:hover {
+  color: #FF8A00;
 }
 
 .footer_quicklinks {
@@ -1233,7 +1308,21 @@ img {
 
 .credit {
   color: #FFC000;
+  position: relative;
+}
+
+.credit:hover {
+  color: #FF8A00;
+}
+
+.credit:hover::after {
+  content: '';
+  display: inline-block;
+  width: 33px;
   border-bottom: 1px solid #FDB407;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
 }
 
 .basement_socials {

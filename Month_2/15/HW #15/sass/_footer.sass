@@ -10,20 +10,11 @@
     &_logo
         margin-right: 191px
 
-        &_img
-            position: relative
-            padding-top: 30px
-
-        &_img::after
-            position: absolute
-            content: ''
-            background: url('../icons/logo_icon/logo.svg') center/cover no-repeat 
-            width: 143px
-            height: 34px
-            bottom: 30px
-            left: 0
+        &_wrapper
+            width: 142px
 
         &_text
+            margin-top: 35px
             line-height: 1.4
             width: 265px
             font-size: 14px
@@ -37,6 +28,9 @@
     &_item
         font-size: 15px
         margin-bottom: 12px
+
+        &:hover
+            color: $clr-orange-3
 
     &_quicklinks
         width: 160px
@@ -64,7 +58,6 @@
         font-size: 12px
 
 
-
 .upper_wrapper
     display: flex
     flex-wrap: wrap
@@ -89,8 +82,19 @@
 
 .credit
     color: $clr-orange-1
-    border-bottom: 1px solid $clr-orange-2
+    position: relative
 
+    &:hover
+        color: $clr-orange-3
+
+    &:hover::after
+        content: ''
+        display: inline-block
+        width: 33px
+        border-bottom: 1px solid $clr-orange-2
+        position: absolute
+        bottom: -1px
+        left: 0
 
 .basement_socials
     display: flex
@@ -115,3 +119,5 @@
 @each $icon in facebook, twitter, youtube, dribble
      .socials_#{$icon}
          background: url('../icons/social_icons/#{$icon}.svg') center/cover no-repeat 
+
+
