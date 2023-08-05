@@ -191,6 +191,7 @@ img {
       flex-wrap: wrap;
   gap: 20px;
   max-width: 1250px;
+  margin-bottom: 100px;
 }
 
 .card {
@@ -234,4 +235,70 @@ img {
   margin-left: 120px;
   width: 282px;
   line-height: 1.5;
+}
+
+.why_block_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.why_block_title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #323232;
+  margin-bottom: 78px;
+}
+
+.why_block_subtitle {
+  font-weight: 400;
+  font-size: 29px;
+  color: #4A4A4A;
+  margin-bottom: 23px;
+}
+
+.why_block_item {
+  margin-left: 119px;
+  margin-bottom: 57px;
+  position: relative;
+}
+
+.why_block_icon {
+  position: absolute;
+  background: url("../icons/why_block/pricing_1.svg") center/cover no-repeat;
+  width: 95px;
+  height: 92px;
+  top: -19px;
+  left: -118px;
+}
+
+.why_block_icon_experts {
+  background: url("../icons/why_block/experts_2.svg") center/cover no-repeat;
+}
+
+.why_block_icon_equipment {
+  background: url("../icons/why_block/equipment_3.svg") center/cover no-repeat;
+}
+
+.why_block_image_wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.why_block_image_wrapper::after {
+  display: block;
+  content: '';
+  background: #FFC839;
+  width: 477px;
+  height: 431px;
+  position: absolute;
+  top: 60px;
+  left: -74px;
+  z-index: -1;
 }
