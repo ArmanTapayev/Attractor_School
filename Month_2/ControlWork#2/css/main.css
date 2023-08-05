@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -106,10 +108,31 @@ img {
   }
 }
 
+.hiphen {
+  display: block;
+}
+
 .promo {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(2, 55, 135, 0.9)), color-stop(99.97%, rgba(81, 38, 174, 0.47)), color-stop(99.98%, rgba(38, 92, 174, 0.01)), color-stop(99.99%, rgba(195, 195, 196, 0.01)), to(#76A6EF)), url("../img/promo/promo_bg.jpg") center/cover no-repeat;
   background: linear-gradient(0deg, rgba(2, 55, 135, 0.9) 0, rgba(81, 38, 174, 0.47) 99.97%, rgba(38, 92, 174, 0.01) 99.98%, rgba(195, 195, 196, 0.01) 99.99%, #76A6EF 100%), url("../img/promo/promo_bg.jpg") center/cover no-repeat;
   height: 865px;
+  color: #fff;
+}
+
+.promo_content {
+  font-family: 'Nunito', sans-serif;
+}
+
+.promo_title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.promo_subtitle {
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .logo_wrapper {
@@ -119,7 +142,7 @@ img {
 }
 
 .navbar {
-  height: 124px;
+  height: 114px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,4 +175,5 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 42px;
+  font-size: 18px;
 }
