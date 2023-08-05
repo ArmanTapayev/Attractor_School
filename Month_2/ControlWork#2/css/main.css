@@ -237,6 +237,10 @@ img {
   line-height: 1.5;
 }
 
+.why_block {
+  margin-bottom: 98px;
+}
+
 .why_block_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,4 +305,82 @@ img {
   top: 60px;
   left: -74px;
   z-index: -1;
+}
+
+.input_block {
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 122px;
+}
+
+.input_block_content {
+  width: 100%;
+  min-height: 437px;
+  background: #FFF5DA;
+  padding-top: 127px;
+}
+
+.input_block_title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  color: #323232;
+  margin-bottom: 25px;
+}
+
+.input_block_text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 29px;
+  color: #646464;
+  margin-bottom: 25px;
+}
+
+.search {
+  margin: 0 auto;
+  width: 702px;
+  height: 78px;
+}
+
+.input_wrapper {
+  min-width: 702px;
+  height: 78px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.input_wrapper .flag::after {
+  content: '';
+  position: absolute;
+  background: url("../icons/input_block/flag.svg") center/cover no-repeat;
+  width: 42px;
+  height: 30px;
+  top: 22px;
+  left: 23px;
+}
+
+.input_wrapper .input_btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.input_wrapper input {
+  width: 100%;
+  padding: 22px 0 5px 110px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #646464;
+  font-size: 24px;
+}
+
+.btn {
+  width: 151px;
+  height: 61px;
+  padding: 14px 45px;
+  background: #FFC839;
+  font-size: 29px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
 }
