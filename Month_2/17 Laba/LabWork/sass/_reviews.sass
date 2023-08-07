@@ -1,0 +1,81 @@
+.reviews   
+    background: $clr-orange-1
+    padding: 100px 10px 107px 10px
+    margin-right: 0
+
+    @include sl
+        padding: 40px 8px 50px 12px
+
+    &_title
+        @include text_s30_w600
+        text-align: center
+        margin-bottom: 60px
+
+        @include sl
+            @include text_s20_w600
+            margin-bottom: 40px
+
+    &_wrapper
+        width: 100%
+        @include display_flex_wrap
+        gap: 21px 
+
+        @include xl
+            justify-content: center
+
+        @include sl
+            margin-bottom: 45px
+
+    &_item
+        height: 265px
+        width: 420px
+
+        &_title
+            @include text_s24_w600
+            margin-bottom: 10px
+
+            @include sl
+                @include text_s18_w500
+
+        &_date
+            @include text_s16_w400
+            display: inline-block
+            position: relative
+            margin-bottom: 19px
+
+            @include sl
+                margin-bottom: 37px
+
+            &::after
+                content: ''
+                background: url('../icons/reviews/stars.svg') center/cover no-repeat
+                position: absolute
+                width: 77px
+                height: 15px
+                left: 85px
+
+        &_text
+            @include text_s16_w400
+            margin-bottom: 18px
+
+        &_link
+            display: inline-block
+            @include text_s16_w400
+
+            @include sl
+                @include text_s16_w500
+
+        &_hidden
+            @include sl
+                @include hidden
+
+    &_btn
+        width: 100%
+        @include text_s20_w500
+        text-align: center
+
+        @include sl
+            padding: 18px
+            margin: 0 auto
+            border: 1px solid $clr-gray-1
+

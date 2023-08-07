@@ -6,6 +6,11 @@
         flex-wrap: wrap
         justify-content: space-between
 
+        @include xl
+            justify-content: center
+            gap: 120px
+            padding: 10px
+
     &_title
         font-family: 'Nunito', sans-serif
         font-weight: 600
@@ -53,5 +58,14 @@
                 top: 60px
                 left: -74px
                 z-index: -1
+
+                @include sm
+                    left: -35px
+                    width: 100px
+
+                @include sl
+                    left: -15px
+                    width: 50px
+                    height: 320px
             
             

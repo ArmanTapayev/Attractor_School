@@ -1,0 +1,73 @@
+.footer
+    background: $clr-orange-1
+    padding-top: 100px
+    padding-bottom: 121px
+
+    @include xl
+        padding-left: 20px
+        padding-right: 20px
+
+    @include sl
+        padding-top: 60px
+        padding-bottom: 50px
+
+    &_wrapper
+        @include display_flex_wrap
+        justify-content: space-between
+
+        @include md
+            gap: 50px
+
+        @include sl
+            flex-direction: column
+            align-items: center
+            
+
+    &_logo
+        margin-bottom: 44px
+
+
+    &_movee_block
+        // margin-right: 203px
+        color: $clr-gray-3
+
+        @include sl
+            text-align: center
+
+        &_text
+            @include text_s16_w400
+            width: 238px
+            margin-bottom: 36px
+
+            &:last-child
+                margin-bottom: 0
+
+    &_menu
+        // margin-right: 180px
+
+    &_contacts
+        // margin-right: 170px
+        @include each_loop
+        
+        &_socials
+            @include link_hover
+            margin-bottom: 20px
+
+        &_email
+            @include text_s20_w500
+            @include link_hover
+
+    &_call
+
+        &_btn
+            margin-top: 12px
+            margin-bottom: 19px
+
+        &_phone
+            text-align: center
+
+            @include xsl
+                @include hidden
+
+
+

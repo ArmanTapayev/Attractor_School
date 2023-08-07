@@ -1,10 +1,21 @@
 .footer
     background: $clr_blue_1
 
+    @include xl
+        padding: 20px
+
+    @include sl
+        height: 100%
+
     &_menu
         display: flex
         flex-wrap: wrap
         gap: 14px 41px
+
+        @include sm
+            display: flex
+            flex-direction: column
+            align-items: center
 
         &_gap
             margin-bottom: 30px
@@ -14,6 +25,10 @@
             font-size: 16px
             font-weight: 400
 
+            @include md
+                font-size: 12px
+
+
 
     &_upper
         padding-top: 45px
@@ -21,10 +36,22 @@
         border-bottom: 1px solid $clr_gray_6
         margin-bottom: 28px
 
+        @include lg
+            padding-top: 25px
+
+        @include sm
+            height: 260px
+            margin-bottom: 50px
+
     &_middle
         padding-bottom: 25px
         border-bottom: 1px solid $clr_gray_6
         margin-bottom: 40px
+
+        @include sm
+            display: flex
+            flex-direction: column
+
 
         &_title
             font-family: 'Nunito', sans-serif
@@ -33,12 +60,24 @@
             font-weight: 600
             margin-bottom: 23px
 
+            @include md
+                font-size: 18px
+
+            @include sm
+                text-align: center
+
         &_subtitle
             font-family: 'Roboto', sans-serif
             font-size: 20px
             font-weight: 400
             color: $clr_gray_1
             margin-bottom: 15px
+
+            @include md
+                font-size: 16px
+
+            @include sm
+                text-align: center
     
     &_lower
         font-family: 'Roboto', sans-serif
@@ -46,27 +85,52 @@
         font-weight: 400
         color: $clr_gray_2
         display: flex
+        flex-wrap: wrap
         justify-content: flex-start
         align-items: center
+        padding-bottom: 153px
+
+        @include sm
+            display: flex
+            flex-direction: column
+
+        @include lg
+            gap: 30px 10px
 
         &_logo
             width: 110px
             display: inline-block
             margin-right: 60px
 
+            @include lg
+                margin-right: 30px
+
         &_copyright
             margin-right: 50px
+
+            @include lg
+                margin-right: 20px
 
         &_address
             margin-right: 40px
 
+            @include lg
+                margin-right: 20px
+
         &_mail
             margin-right: 100px
+
+            @include xl
+                margin-right: 30px
 
         &_stores
             display: flex
             flex-wrap: wrap
+            justify-content: center
             gap: 50px
+
+            @include xl
+                gap: 20px
 
             &_google_play
                 width: 133px

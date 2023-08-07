@@ -1,0 +1,136 @@
+.order
+
+    &_wrapper
+        padding-top: 124px
+        padding-left: 148px
+        padding-bottom: 60px
+ 
+        @include md
+            display: flex
+            flex-direction: column
+            padding-left: 10%
+            padding-right: 20px
+
+        @include sl
+            justify-content: center
+            padding: 62px 16px 60px 16px
+        
+
+    &_title
+        @include text_s30_w600
+        margin-bottom: 10px
+
+        @include sl
+            @include text_s20_w600
+
+        @include sl
+            text-align: center
+
+        @include xsl
+            margin: 0 50px 20px 50px
+
+    &_text
+        @include text_s16_w400
+        margin-bottom: 30px
+        @include display_flex_wrap
+        align-items: flex-start
+
+        @include sl
+            @include text_s15_w400
+
+        @include sl
+            display: inline-block
+            text-align: center
+        
+
+    &_form
+        &_wrapper
+            @include display_flex_wrap
+            gap: 70px
+          
+            @include sl
+                margin: 0 auto
+                width: 290px
+                gap: 20px       
+
+        &_input
+            width: 300px
+
+            @include md
+                width: 290px
+
+            @include sl
+                width: 100%
+
+
+            &_text
+                width: 100%
+                padding: 20px 0 10px 0
+                padding-left: 0
+                border: none
+                border-bottom: 1px solid $clr-gray-1
+                outline: none
+                color: $clr-gray-2
+                @include text_s20_w500
+
+                @include sm
+                    @include text_s16_w500
+
+                &::placeholder
+                    @include text_s20_w500
+
+                    @include sm
+                        @include text_s16_w500
+
+        &_callback
+            width: 100%
+            position: relative
+            &_btn
+                margin-top: 16px
+                margin-bottom: 35px
+                
+                @include sl
+                    margin-bottom: 15px
+
+
+            &_checkbox
+                height: 25px
+                &_custom
+                    position: absolute
+                    z-index: -1
+                    opacity: 0
+
+                &_custom:checked + label::before
+                    background: url('../icons/input/checkbox.svg') center/cover no-repeat
+                    width: 16px
+                    height: 16px
+                    
+
+                &_custom + label
+                    display: inline-block
+                    align-items: center
+                    user-select: none
+
+                    &::before
+                            content: ''
+                            display: inline-block
+                            width: 16px
+                            height: 16px
+                            flex-shrink: 0
+                            flex-grow: 0
+                            border: 2px solid $clr-gray-1
+                            border-radius: 2px
+                            margin-right: 0.5em
+                            background-repeat: no-repeat
+                            background-position: center center
+                            background-size: 50% 50%
+                                      
+                &_label
+                    @include text_s12_w400
+                    position: absolute
+                    left: 25px
+                    bottom: 10px
+      
+                 
+
+                

@@ -1,0 +1,40 @@
+.btn
+    border: 1px solid $clr-gray-1
+
+    &_red
+        background: $clr-red-1
+        border: none
+        color: $clr-white
+        position: relative
+        z-index: 2
+
+        &_callback
+            padding: 13px 31px
+
+            @include sl
+                @include text_s20_w500
+                display: block
+                width: 100%
+                height: 60px
+                text-align: center
+                vertical-align: middle
+                padding-top: 20px
+
+            &::after
+                @include btn_offset_orange
+
+                @include sl
+                    @include border_none
+
+    &::after
+        @include btn_offset
+
+    &_call
+        padding: 10px 31px
+
+    &_review
+        padding: 13px 64px
+
+        @include sl
+            border: none
+    

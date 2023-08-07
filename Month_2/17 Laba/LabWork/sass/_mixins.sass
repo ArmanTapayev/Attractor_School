@@ -1,0 +1,124 @@
+//      ANIMATION
+@mixin animation
+    transition: 2s all
+
+//      DIMENSIONS 
+@mixin xl
+    @media screen and (max-width: 1340px)
+        @content
+
+@mixin lg
+    @media screen and (max-width: 1100px)
+        @content
+
+@mixin md
+    @media screen and (max-width: 980px)
+        @content
+
+@mixin sm
+    @media screen and (max-width: 780px)
+        @content
+
+@mixin sl
+    @media screen and (max-width: 510px)
+        @content
+
+@mixin xsl
+    @media screen and (max-width: 320px)
+        @content
+
+//      FLEX
+@mixin display_flex_center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin display_flex_wrap
+    display: flex
+    flex-wrap: wrap
+    
+//    LINK 
+@mixin link_hover
+    &:hover
+        color: $clr-red-1
+       
+@mixin link_transform   
+    transform: scale(1.1)
+    border-radius: 5px
+    box-shadow: 0px 1px 7px 0px $clr-red-1
+
+//       FONTS
+@mixin text_s70_w700
+    font-size: 70px
+    font-weight: 700 
+
+@mixin text_s30_w600
+    font-size: 30px
+    font-weight: 600 
+
+@mixin text_s24_w600
+    font-size: 24px
+    font-weight: 600  
+
+@mixin text_s20_w600
+    font-size: 20px
+    font-weight: 600 
+
+@mixin text_s20_w500
+    font-size: 20px
+    font-weight: 500  
+
+@mixin text_s18_w500
+    font-size: 18px
+    font-weight: 500  
+
+@mixin text_s16_w500
+    font-size: 16px
+    font-weight: 500
+            
+@mixin text_s16_w400
+    font-size: 16px
+    font-weight: 400
+
+@mixin text_s15_w400
+    font-size: 15px
+    font-weight: 400
+
+@mixin text_s12_w400
+    font-size: 12px
+    font-weight: 400
+
+
+//      EACH LOOP
+@mixin each_loop
+    @each $item in yt, vk, fb, ig
+        .item_#{$item}
+            background: url('../icons/footer/socials/#{$item}.svg') center/cover no-repeat
+            width: 18px
+            height: 18px
+
+//      HIDDEN
+@mixin hidden
+    display: none
+
+//      BUTTON OFFSET
+@mixin btn_offset
+    content: ''
+    position: absolute   
+    width: 100%
+    height: 100%
+    top: 10px
+    left: 10px
+    z-index: -1
+    
+
+@mixin btn_offset_orange
+    border: 1px solid $clr-orange-1
+
+@mixin btn_offset_white
+    border: 1px solid $clr-white
+
+@mixin border_none
+    border: none
+    
+    
