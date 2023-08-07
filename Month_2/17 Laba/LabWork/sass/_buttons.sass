@@ -44,3 +44,27 @@
         background: $clr-orange-1
         padding: 14px 77px
 
+    &_autopark
+        width: 100%
+        height: 100%
+        display: inline-block
+        padding: 16px 64px
+        border: 1px solid $clr-gray-light-1
+
+        &:hover
+            border: 1px solid $clr-orange-1
+
+        &_active
+            border: 1px solid $clr-orange-1
+
+        @include md
+            padding: 16px 10px
+
+        @include sl
+            border: none
+            padding: 0
+
+            &:hover
+                border: none
+                border-bottom: 1px solid $clr-orange-1
+

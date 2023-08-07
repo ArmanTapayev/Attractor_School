@@ -1,0 +1,119 @@
+.autopark
+    padding-top: 35px
+
+    &_wrapper
+        @include lg
+            padding-left: 10px
+
+    &_title
+        @include text_s30_w600
+        text-align: center
+        margin-bottom: 15px
+
+        @include sl
+            @include text_s20_w600
+            margin-bottom: 25px
+
+    &_subtitle
+        @include text_s24_w600
+        text-align: center
+        margin-bottom: 60px
+
+        @include sl
+            @include hidden
+            
+    &_btns
+        @include display_flex_center
+        gap: 19px
+        margin-bottom: 47px
+
+        @include sl
+            gap: 10px        
+
+        &_btn
+            width: 201px
+            height: 50px
+            text-align: center   
+                   
+
+            @include md
+                gap: 9px
+                width: 120px
+
+            @include sl
+                @include text_s16_w400
+                width: auto
+                height: 18px
+
+
+    &_model
+        @include display_flex_center
+        @include display_flex_wrap
+
+        gap: 70px
+
+        @include md
+            gap: 10px
+
+        &_content
+            width: 252px
+            height: 453px
+            padding-top: 50px
+
+            @include sl
+                @include hidden
+
+            &_title
+                @include text_s24_w600
+                margin-bottom: 37px
+
+            &_dimensions
+                margin-bottom: 37px
+
+            &_dimension
+                position: relative
+                padding-left: 30px
+                margin-bottom: 28px
+
+                &::before
+                    content: ''
+                    position: absolute
+                    background: url('../icons/autopark/check.svg')
+                    width: 14px
+                    height: 14px
+                    left: 0
+
+                &:last-child
+                    margin-bottom: 0
+
+
+        &_img
+            width: 641px
+            height: 453px
+            
+            @include sm
+                width: 70%
+                height: 70%
+
+            @include sl
+                width: 321px
+                height: 227px
+                margin-bottom: 20px
+
+    &_discription
+        @include hidden
+
+        @include sl
+            @include text_s12_w400
+            display: block
+            text-align: center
+            margin-bottom: 80px
+
+    &_btn_hidden
+        @include hidden
+
+        @include sl
+            display: block
+
+
+

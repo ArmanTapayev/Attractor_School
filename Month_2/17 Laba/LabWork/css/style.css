@@ -72,6 +72,7 @@ img {
 .container {
   max-width: 1304px;
   margin: 0 auto;
+  background: #eee;
 }
 
 @media screen and (max-width: 1340px) {
@@ -202,6 +203,39 @@ img {
   padding: 14px 77px;
 }
 
+.btn_autopark {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 16px 64px;
+  border: 1px solid #EBEBEB;
+}
+
+.btn_autopark:hover {
+  border: 1px solid #FED100;
+}
+
+.btn_autopark_active {
+  border: 1px solid #FED100;
+}
+
+@media screen and (max-width: 980px) {
+  .btn_autopark {
+    padding: 16px 10px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .btn_autopark {
+    border: none;
+    padding: 0;
+  }
+  .btn_autopark:hover {
+    border: none;
+    border-bottom: 1px solid #FED100;
+  }
+}
+
 .menu {
   font-size: 20px;
   font-weight: 500;
@@ -224,6 +258,145 @@ img {
 
 .menu_item:last-child {
   margin-bottom: 0;
+}
+
+.steps {
+  padding-top: 95px;
+}
+
+@media screen and (max-width: 1340px) {
+  .steps {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .steps {
+    padding-top: 40px;
+    padding-bottom: 52px;
+  }
+}
+
+.steps_title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 510px) {
+  .steps_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+}
+
+.steps_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 56px;
+}
+
+@media screen and (max-width: 1100px) {
+  .steps_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .steps_wrapper {
+    gap: 20px;
+  }
+}
+
+.steps_wrapper_item {
+  position: relative;
+  width: 400px;
+  list-style-position: inside;
+  margin-right: 120px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 510px) {
+  .steps_wrapper_item {
+    margin-right: 10px;
+    width: 250px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
+.steps_content {
+  padding-bottom: 10px;
+  width: 370px;
+  height: 200px;
+  padding-left: 0;
+  position: absolute;
+  top: 10px;
+  left: 90px;
+}
+
+@media screen and (max-width: 510px) {
+  .steps_content {
+    width: 200px;
+    height: 100%;
+  }
+}
+
+.steps_content_title {
+  font-size: 20px;
+  font-weight: 500;
+  width: 366px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 510px) {
+  .steps_content_title {
+    font-size: 16px;
+    font-weight: 400;
+    width: 177px;
+    line-height: 1.4;
+  }
+}
+
+.steps_content_text {
+  font-size: 16px;
+  font-weight: 400;
+  width: 390px;
+}
+
+@media screen and (max-width: 510px) {
+  .steps_content_text {
+    display: none;
+  }
+}
+
+.steps_step_01::marker {
+  content: url("../icons/steps/step_01.svg");
+}
+
+.steps_step_02::marker {
+  content: url("../icons/steps/step_02.svg");
+}
+
+.steps_step_03::marker {
+  content: url("../icons/steps/step_03.svg");
+}
+
+.steps_step_04::marker {
+  content: url("../icons/steps/step_04.svg");
 }
 
 .prices {
@@ -387,6 +560,193 @@ img {
     width: 100%;
     display: inline-block;
     text-align: center;
+  }
+}
+
+.autopark {
+  padding-top: 35px;
+}
+
+@media screen and (max-width: 1100px) {
+  .autopark_wrapper {
+    padding-left: 10px;
+  }
+}
+
+.autopark_title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 510px) {
+  .autopark_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+}
+
+.autopark_subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 510px) {
+  .autopark_subtitle {
+    display: none;
+  }
+}
+
+.autopark_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 19px;
+  margin-bottom: 47px;
+}
+
+@media screen and (max-width: 510px) {
+  .autopark_btns {
+    gap: 10px;
+  }
+}
+
+.autopark_btns_btn {
+  width: 201px;
+  height: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  .autopark_btns_btn {
+    gap: 9px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .autopark_btns_btn {
+    font-size: 16px;
+    font-weight: 400;
+    width: auto;
+    height: 18px;
+  }
+}
+
+.autopark_model {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 70px;
+}
+
+@media screen and (max-width: 980px) {
+  .autopark_model {
+    gap: 10px;
+  }
+}
+
+.autopark_model_content {
+  width: 252px;
+  height: 453px;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 510px) {
+  .autopark_model_content {
+    display: none;
+  }
+}
+
+.autopark_model_content_title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 37px;
+}
+
+.autopark_model_content_dimensions {
+  margin-bottom: 37px;
+}
+
+.autopark_model_content_dimension {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 28px;
+}
+
+.autopark_model_content_dimension::before {
+  content: '';
+  position: absolute;
+  background: url("../icons/autopark/check.svg");
+  width: 14px;
+  height: 14px;
+  left: 0;
+}
+
+.autopark_model_content_dimension:last-child {
+  margin-bottom: 0;
+}
+
+.autopark_model_img {
+  width: 641px;
+  height: 453px;
+}
+
+@media screen and (max-width: 780px) {
+  .autopark_model_img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .autopark_model_img {
+    width: 321px;
+    height: 227px;
+    margin-bottom: 20px;
+  }
+}
+
+.autopark_discription {
+  display: none;
+}
+
+@media screen and (max-width: 510px) {
+  .autopark_discription {
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+}
+
+.autopark_btn_hidden {
+  display: none;
+}
+
+@media screen and (max-width: 510px) {
+  .autopark_btn_hidden {
+    display: block;
   }
 }
 
