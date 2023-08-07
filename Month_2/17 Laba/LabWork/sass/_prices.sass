@@ -1,0 +1,96 @@
+.prices
+    padding: 59px 0 67px 0
+
+    @include sl
+        padding-top: 50px 
+        background: $clr-prices_bg
+
+    &_title
+        @include text_s30_w600
+        text-align: center
+        margin-bottom: 16px
+
+        @include sl
+            @include text_s20_w600
+
+    &_subtitle
+        @include text_s24_w600
+        text-align: center
+        margin-bottom: 60px
+
+        @include sl
+            @include hidden
+
+    &_wrapper
+        @include display_flex_wrap
+        gap: 20px
+
+        @include xl
+            @include display_flex_center
+
+    &_card
+        border: 1px solid $clr-prices_normal
+        width: 421px
+        height: 579px
+        padding-top: 104px
+
+        @include sl
+            width: 320px
+            padding-top: 40px
+            height: 330px
+
+        &_active
+            border: 1px solid $clr-orange-1
+
+            @include sl
+                border: none
+
+        &_hidden
+            @include sl
+                @include hidden 
+
+        &_title
+            @include text_s24_w600
+            text-align: center
+            margin-bottom: 60px
+
+            @include sl
+                @include hidden
+
+        &_items
+            margin-bottom: 60px
+
+            @include sl
+                margin-bottom: 40px
+
+        &_item
+            @include text_s16_w400
+            text-align: center
+            margin-bottom: 25px
+
+            @include sl
+                @include text_s18_w500
+
+            &:last-child
+                margin-bottom: 0
+
+        &_price
+            @include text_s30_w600
+            text-align: center
+            margin-bottom: 52px
+
+        &_btn
+            width: 250px
+            margin: 0 auto
+            text-align: center
+
+            @include sl
+                width: 292px
+
+    &_allprices
+        @include hidden
+
+        @include sl
+            width: 100%        
+            display: inline-block
+            text-align: center
