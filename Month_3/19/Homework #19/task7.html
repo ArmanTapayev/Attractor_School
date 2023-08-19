@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homework #19. Arrays. Objects. Loops" />
+    <title>Task #7</title>
+  </head>
+  <body>
+    <script>
+      const numberOne = Math.floor(Math.random() * 9) + 1;
+      const numberTwo = Math.floor(Math.random() * 9) + 1;
+      const result = numberOne * numberTwo;
+
+      const answer = prompt(`What is ${numberOne} * ${numberTwo}?`);
+
+      if (answer !== '' && answer !== null) {
+        result === parseInt(answer)
+          ? alert('You are correct!')
+          : alert('You are wrong');
+      } else {
+        alert('Do not evade the answer!');
+      }
+    </script>
+  </body>
+</html>

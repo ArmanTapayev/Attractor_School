@@ -1,0 +1,35 @@
+1. Задание:
+    (2 < 3) && (3 > 4) || true
+   Упрощение:
+ 1)   (2 < 3) && (3 > 4) || true
+ 2)    true   && (3 > 4) || true
+ 3)    true   &&  false  || true
+ 4)         false        || true
+                        true
+
+    Ответ: true
+
+2. Задание:
+    !true && (!true || 100 != 5 * 5)
+   Упрощение:
+ 1)  !true && (!true || 100 != 5 * 5)
+ 2)  !true && (false || 100 != 5 * 5)
+ 3)  !true && (false || 100 != 25)
+ 4)  !true && (false || true)
+ 5)  !true && true
+ 6)  false && true
+ 7)      false
+
+    Ответ: false 
+
+3. Задание:
+     ("123" == 123) || ((10 <= 10) && ('' === false))
+   Упрощение:  
+ 1)  ("123" == 123) || ((10 <= 10) && ('' === false))
+ 2)  ("123" == 123) || (false && ('' === false))
+ 3)  ("123" == 123) || (false && false)
+ 4)      true       || (false && false)
+ 5)      true       ||      false
+ 6)                true
+
+    Ответ: true

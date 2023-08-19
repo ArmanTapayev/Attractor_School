@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homework #18. Task 4" />
+    <title>Task 4</title>
+  </head>
+  <body>
+    <script>
+      let number = 10;
+
+      /*
+        При запуске кода появится сообщение 'Number is 11!' поскольку выражение number = 11 является правдивым.
+        Необходимо заменить оператор присваивание "=" на оператор сравнения "==="
+      */
+
+      if (number === 11) {
+        alert('Number is 11!');
+      } else {
+        alert('Number is 10!');
+      }
+
+      // Решением проблемы могло бы стать использование конструкции switch
+
+      switch (number) {
+        case 10:
+          alert('Number is 10!');
+          break;
+        case 11:
+          alert('Number is 11!');
+          break;
+        default:
+          alert('Something goes wrong...');
+      }
+
+      // Или использование оператора typeof
+      if (typeof (number === 11) === 'boolean' && number === 11) {
+        alert('Number is 11!');
+      } else if (typeof (number === 10) === 'boolean' && number === 10) {
+        alert('Number is 10!');
+      } else {
+        alert('Something goes wrong...');
+      }
+    </script>
+  </body>
+</html>

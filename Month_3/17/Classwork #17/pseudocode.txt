@@ -1,0 +1,52 @@
+START - старт
+END - конец
+INPUT - ввод
+PRINT/DISPLAY/SHOW - показать
+SET/INIT - установить
+CALCULATE/DETERMINE - посчитать
+PROGRAM - название программы
+INCREMENT - инкремент
+DECREMENT - декремент
+
+IF/ELSE-IF/ELSE
+
+START
+    IF идет дождь?
+        THEN взять зонт
+    ENDIF
+END
+
+START
+    IF вам грустно?
+        THEN не грусти
+    ELSE-IF вам весело?
+        THEN сходи погуляй
+    ELSE
+        бегай
+    ENDIF
+END
+
+START
+    INPUT Ваш возраст
+    CASE возраст -
+        <= 10: PRINT смотрите мульты
+        > 10 AND < 25: PRINT смотрите фантастику
+        <= 99: PRINT смотрите ужастики
+    OTHER:
+        PRINT введите Ваш возраст корректно
+    ENDCASE
+END
+
+START   
+    FOR каждый день недели
+        посчитать кол-во секунд
+    ENDFOR
+END
+
+START
+    SET количество_конфет = 6
+    WHILE количество_конфет > 0
+        беру конфету
+        кушаю конфету
+    ENDWHILE
+END

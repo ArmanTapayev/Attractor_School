@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homework #19. Arrays. Objects. Loops" />
+    <title>Task #3</title>
+  </head>
+  <body>
+    <script>
+      const user = 'admin';
+      const password = 'BlackOverlord';
+      const loginUser = prompt('Enter your name: ');
+
+      if (loginUser !== '' && loginUser !== null) {
+        if (loginUser === user) {
+          const loginPassword = prompt('Enter your password: ');
+          if (loginPassword !== '' && loginPassword !== null) {
+            if (loginPassword === password) {
+              console.log('Welcome!');
+            } else {
+              console.log('Wrong Password!');
+            }
+          } else {
+            console.log('Login canceled!');
+          }
+        } else {
+          console.log('Unknown user');
+        }
+      } else {
+        console.log('Login canceled');
+      }
+    </script>
+  </body>
+</html>

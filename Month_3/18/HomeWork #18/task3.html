@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homework #18. Task 3" />
+    <title>Task 3</title>
+  </head>
+  <body>
+    <script>
+      const beverage =
+        prompt(`Введите свой любимый напиток или выберите из списка:
+        Вода
+        Лимонад
+        Сок
+        Кофе
+        Чай
+        Пиво
+        Вино
+        Коньяк
+        Водка`);
+
+      switch (beverage) {
+        case 'Вода':
+        case 'вода':
+        case 'Лимонад':
+        case 'лимонад':
+        case 'Сок':
+        case 'сок':
+          alert(
+            'Прекрасный выбор! Безалкогольные напитки подходят для всех, независимо от времени суток и события!'
+          );
+          break;
+
+        case 'Кофе':
+        case 'кофе':
+        case 'Чай':
+        case 'чай':
+          alert(
+            'Кофеин по праву считается одним из лучших природных стимуляторов! Однако помните об умеренном употреблении кофеина!'
+          );
+          break;
+        case 'Пиво':
+        case 'пиво':
+        case 'Вино':
+        case 'вино':
+        case 'Коньяк':
+        case 'коньяк':
+        case 'Водка':
+        case 'водка':
+          alert(
+            'Алкоголь в малых дозах полезен в любых количествах! Шутка. Помните о вреде при злоупотребелении алкоголем!'
+          );
+          break;
+        default:
+          alert(
+            'При выборе напитков всегда помните об их влиянии на ваше здоровье!'
+          );
+      }
+    </script>
+  </body>
+</html>

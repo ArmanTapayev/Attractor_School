@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homework #19. Arrays. Objects. Loops" />
+    <title>Task #6</title>
+  </head>
+  <body>
+    <script>
+      const remainingTime = parseInt(prompt('Введите количество секунд: '));
+
+      if (remainingTime >= 3600 && remainingTime <= 28800) {
+        const hours = Math.floor(remainingTime / 3600);
+        if (
+          hours === 0 ||
+          hours === 5 ||
+          hours === 6 ||
+          hours === 7 ||
+          hours === 8
+        ) {
+          alert(`${remainingTime}\nОсталось ${hours} часов`);
+        } else if (hours === 2 || hours === 3 || hours === 4) {
+          alert(`${remainingTime}\nОсталось ${hours} часа`);
+        } else if (hours === 1) {
+          alert(`${remainingTime}\nОстался ${hours} час`);
+        } else {
+          alert(`Количество часов должно быть от 0 до 8`);
+        }
+      } else if (remainingTime >= 0 && remainingTime < 3600) {
+        alert(`Осталось менее часа`);
+      } else {
+        alert('Количество секунд должно быть в диапазоне от 0 до 28800.');
+      }
+    </script>
+  </body>
+</html>
