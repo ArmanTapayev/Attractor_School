@@ -15,7 +15,8 @@ do {
     1. "Низкая": таблица умножения на 1 и 2
     2. "Средняя": таблица умножения от 3 до 5
     3. "Высокая": вся таблица, кроме 1, 2 и 5
-    4. "Всё": вся таблица умножения`);
+    4. "Всё": вся таблица умножения
+Для выхода нажмите "Cancel"`);
 
   if (option === null) {
     alert('Всего доброго!');
@@ -32,7 +33,7 @@ do {
           numberTwo = Math.floor(Math.random() * 2) + 1;
           result = numberOne * numberTwo;
 
-          answer = prompt(`What is ${numberOne} * ${numberTwo}?`);
+          answer = prompt(`Сколько будет ${numberOne} * ${numberTwo}?`);
 
           if (answer === null) {
             option = null;
@@ -116,7 +117,7 @@ do {
           numberTwo = Math.floor(Math.random() * 3) + 3;
           result = numberOne * numberTwo;
 
-          answer = prompt(`What is ${numberOne} * ${numberTwo}?`);
+          answer = prompt(`Сколько будет ${numberOne} * ${numberTwo}?`);
 
           if (answer === null) {
             option = null;
@@ -219,7 +220,7 @@ do {
 
           result = numberOne * numberTwo;
 
-          answer = prompt(`What is ${numberOne} * ${numberTwo}?`);
+          answer = prompt(`Сколько будет ${numberOne} * ${numberTwo}?`);
 
           if (answer === null) {
             option = null;
@@ -327,7 +328,7 @@ do {
           numberTwo = Math.floor(Math.random() * 9) + 1;
           result = numberOne * numberTwo;
 
-          answer = prompt(`What is ${numberOne} * ${numberTwo}?`);
+          answer = prompt(`Сколько будет ${numberOne} * ${numberTwo}?`);
 
           if (answer === null) {
             option = null;
